@@ -31,9 +31,10 @@
       </nav>
     </header>
     <main class="main">
+      <h1>Подбор программы</h1>
       <form class="main-form" action="https://echo.htmlacademy.ru"  method="POST">
         <fieldset class="main-form__fieldset">
-          <legend class="main-form__legend">Подбор программы</legend>
+          <legend class="main-form__legend">Обратная связь</legend>
           <h2 class="main-form__title">
             Заполните анкету, и мы подберем
             программу питания для вашего кота
@@ -41,16 +42,16 @@
           <ul class="main-form__list list-for-cat">
             <li class="list-for-cat__item">
               <label class="list-for-cat__label">
-                ИМЯ:* <input type="text" name="name-pet">
+                ИМЯ:* <input type="text" name="name-pet" required>
               </label>
             </li>
             <li class="list-for-cat__item">
-              <label class="list-for-cat__label"></label>
-                Вес (кг):* <input type="number" name="weight-pet">
+              <label class="list-for-cat__label">
+                Вес (кг):* <input type="number" name="weight-pet" required>
               </label>
             </li>
             <li class="list-for-cat__item">
-              <label class="list-for-cat__label"></label>
+              <label class="list-for-cat__label">
                 Возраст (лет): <input type="number" name="age-pet">
               </label>
             </li>
@@ -58,8 +59,8 @@
           <ul class="main-form__list list-for-program">
             <li class="list-for-program__item">
               <label class="list-for-program__label">
-                <input type="radio" name="choose-program" value="lose-weight">похудение
-              </label class="list-for-program__label">
+                <input type="radio" name="choose-program" value="lose-weight">Похудение
+              </label>
             </li>
             <li class="list-for-program__item">
               <label class="list-for-program__label">
@@ -76,42 +77,42 @@
         <fieldset class="main-form__fieldset">
           <legend class="main-form__legend">Контактные данные (владельца кота)</legend>
           <label>
-            E-mail:*<input type="email" name="e-mail">
+            E-mail:*<input type="email" name="e-mail" required>
           </label>
           <label>
-            Телефон:*<input type="number" name="customer-phone">
+            Телефон:*<input type="number" name="customer-phone" required>
           </label>
         </fieldset>
         <fieldset class="main-form__fieldset">
           <legend class="main-form__legend">Комментарий</legend>
-          <textarea name="" id="" cols="30" rows="10" name="comments" placeholder="Расскажите обо всех повАдках кота"></textarea>
+          <textarea cols="30" rows="10" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="main-form__fieldset">
           <legend class="main-form__legend">Дополнительно</legend>
           <ul class="main-form__addivites addivites-list">
             <li class="addivites-list__item">
               <label class="addivites-list__label">
-                <input type="checkbox" name="insugar" >сахарозаменитель
+                <input type="checkbox" name="insugar" >Сахарозаменитель
               </label>
             </li>
             <li class="addivites-list__item">
               <label class="addivites-list__label">
-                <input type="checkbox" name="drink-water">питьевая вода
+                <input type="checkbox" name="drink-water">Питьевая вода
               </label>
             </li>
             <li class="addivites-list__item">
               <label class="addivites-list__label">
-                <input type="checkbox" name="milk">молоко
+                <input type="checkbox" name="milk">Молоко
               </label>
             </li>
             <li class="addivites-list__item">
               <label class="addivites-list__label">
-                <input type="checkbox" name="vita">витамины
+                <input type="checkbox" name="vita">Витамины
               </label>
             </li>
           </ul>
         </fieldset>
-        <button class="main-form__button" type="submit">отправить заявку</button>
+        <button class="main-form__button" type="submit">Отправить заявку</button>
       </form>
       <p class="main__warning">* — Обязательные поля</p>
     </main>
