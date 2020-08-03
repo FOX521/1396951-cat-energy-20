@@ -1,5 +1,5 @@
 .advantages-food__title {
-  font-family: Oswald;
+  font-family: "Oswald";
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -19,15 +19,12 @@
   margin-bottom: 20px;
   padding-top: 4px;
   padding-bottom: 4px;
-  font-family: Arial;
+  font-family: "Arial";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-}
-
-.advantages-food__item {
   &-first::before {
     display: inline-block;
     content: "";

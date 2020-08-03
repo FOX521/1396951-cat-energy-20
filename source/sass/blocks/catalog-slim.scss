@@ -3,27 +3,27 @@
 }
 
 .catalog-slim__title {
-  font-family: Oswald;
+  font-family: "Oswald";
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-    &::before {
-      display: inline-block;
-      content: "";
-      background-color: $color-green;
-      border-radius: 50%;
-      background-image: url("../img/icon-cat-slim.svg");
-      background-repeat: no-repeat;
-      background-position: 0px 10px;
-      width: 50px;
-      height: 50px;
-    }
+  &::before {
+    display: inline-block;
+    content: "";
+    background-color: $color-green;
+    border-radius: 50%;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: 0px 10px;
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .catalog-slim__describe {
-  font-family: Arial;
+  font-family: "Arial";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -32,7 +32,7 @@
 }
 
 .catalog-slim__link {
-  font-family: Oswald;
+  font-family: "Oswald";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -40,16 +40,12 @@
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-   &::after {
-     content: "";
-     background-image: url("../img/icon-right-arrow-verylong.svg");
-     background-repeat: no-repeat;
-     display: inline-block;
-     width: 30px;
-     height: 10px;
-   }
+  &::after {
+    content: "";
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 10px;
+  }
 }
-
-
-
-
