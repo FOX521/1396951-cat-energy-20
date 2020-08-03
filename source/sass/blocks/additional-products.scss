@@ -1,0 +1,62 @@
+
+.additional-products__title {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-black;
+}
+
+.additional-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.additional-list__title {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 16px;
+}
+
+.additional-table {
+  margin-bottom: 25px;
+}
+
+.additional-table__rows {
+  padding-top: 13px;
+  padding-bottom:15px;
+}
+
+.additional-table__column {
+  padding-right: 189px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-black;
+}
+
+.additional-list__button {
+  text-decoration: none;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 0px;
+  color: $color-white;
+  background-color: $color-green;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 109px;
+  padding-left: 109px;
+  margin-top: 10px;
+}
+

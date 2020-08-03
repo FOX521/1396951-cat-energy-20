@@ -1,0 +1,30 @@
+
+.nav {
+  background-color: white;
+  color: black;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-list__link {
+  text-decoration: none;
+  color: black;
+}
+
+.main-list__item {
+  padding-top: 22px;
+  padding-bottom:24px;
+  border-bottom:1px solid grey;
+}
+

@@ -1,0 +1,33 @@
+
+.all-products_title {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-black;
+}
+
+.all-products_tagline {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color:$color-black;
+}
+
+.all-products__button {
+  cursor: pointer;
+  background-color: $color-dirty-grey;
+  border: none;
+  padding: 20px 94px 20px 94px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 0px;
+  text-transform: uppercase;
+  color: $color-black;
+}

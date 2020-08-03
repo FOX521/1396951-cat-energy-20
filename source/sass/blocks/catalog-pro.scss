@@ -1,0 +1,51 @@
+.catalog-pro {
+  background-color: $color-dirty-grey;
+}
+
+.catalog-pro__title {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  &::before {
+    content: "";
+    background-color: $color-green;
+    border-radius: 50%;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: 0px 10px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.catalog-pro__describe {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.catalog-pro__link {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+    &::after{
+      content: "";
+      background-image: url("../img/icon-right-arrow-long.svg");
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 10px;
+      display: inline-block;
+    }
+}

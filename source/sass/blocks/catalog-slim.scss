@@ -1,0 +1,55 @@
+.catalog-slim {
+  background-color: $color-dirty-grey;
+}
+
+.catalog-slim__title {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+    &::before {
+      display: inline-block;
+      content: "";
+      background-color: $color-green;
+      border-radius: 50%;
+      background-image: url("../img/icon-cat-slim.svg");
+      background-repeat: no-repeat;
+      background-position: 0px 10px;
+      width: 50px;
+      height: 50px;
+    }
+}
+
+.catalog-slim__describe {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.catalog-slim__link {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+   &::after {
+     content: "";
+     background-image: url("../img/icon-right-arrow-verylong.svg");
+     background-repeat: no-repeat;
+     display: inline-block;
+     width: 30px;
+     height: 10px;
+   }
+}
+
+
+
+

@@ -1,0 +1,75 @@
+.advantages-food__title {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.advantages-food__list {
+  list-style: none;
+  text-decoration: none;
+}
+
+.advantages-food__item {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.advantages-food__item {
+  &-first::before {
+    display: inline-block;
+    content: "";
+    background-color: $color-green;
+    border-radius: 0%;
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-repeat: no-repeat;
+    background-position: 4px 7px;
+    width: 60px;
+    height: 60px;
+  }
+  &-second::before {
+    display: inline-block;
+    content: "";
+    background-color: $color-green;
+    border-radius: 0%;
+    background-image: url("../img/advantage-powder@1x.png");
+    background-repeat: no-repeat;
+    background-position: 4px 7px;
+    width: 60px;
+    height: 60px;
+  }
+  &-thirth::before {
+    display: inline-block;
+    content: "";
+    background-color: $color-green;
+    border-radius: 0%;
+    background-image: url("../img/advantage-dining@1x.png");
+    background-repeat: no-repeat;
+    background-position: 4px 7px;
+    width: 60px;
+    height: 60px;
+  }
+  &-fourth::before {
+    display: inline-block;
+    content: "";
+    background-color: $color-green;
+    border-radius: 0%;
+    background-image: url("../img/advantage-clock@1x.png");
+    background-repeat: no-repeat;
+    background-position: 4px 7px;
+    width: 60px;
+    height: 60px;
+  }
+}

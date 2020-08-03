@@ -1,0 +1,54 @@
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list__item {
+
+}
+
+.catalog-list__title {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.table {
+  margin-bottom: 22px;
+}
+
+.table__rows {
+  padding-bottom: 2px;
+}
+
+.table__column {
+  padding-right:75px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-grey;
+}
+
+.catalog-list__link {
+  text-decoration: none;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 0px;
+  color: $color-white;
+  background-color: $color-green;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 109px;
+  padding-left: 109px;
+  margin-top: 10px;
+}
+
+
+

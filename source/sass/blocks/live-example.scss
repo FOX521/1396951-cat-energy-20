@@ -1,0 +1,48 @@
+.live-example {
+  font-family: "Oswald" "Arial";
+  font-style: normal;
+  font-weight: normal;
+  background-color: $color-dirty-grey;
+}
+
+.live-example__title {
+  font-family: Oswald;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.live-example__describe {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color:#444444;
+}
+
+.list-example{
+  list-style: none;
+}
+
+.list-example__item {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.live-example__spend-for-food {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
