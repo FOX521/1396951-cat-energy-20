@@ -3,11 +3,9 @@
 }
 
 .copyright__link {
-  font-family: "Arial";
-  font-style: normal;
-  font-weight: normal;
+  @include font-arial ();
   font-size: 16px;
   line-height: 18px;
-  color: #444444;
+  color: $color-grey;
   text-decoration: none;
 }

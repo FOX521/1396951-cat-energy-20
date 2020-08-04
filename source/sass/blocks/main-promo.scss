@@ -7,14 +7,15 @@
 }
 
 .promo__title {
+  @include font-oswald ();
+  font-size: 36px;
+  line-height: 36px;
   color: $color-white;
 }
 
 .promo__describe {
   color: $color-white;
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: normal;
+  @include font-oswald ();
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -31,6 +32,6 @@
   padding-right: 44px;
   background-color: $color-green;
   text-decoration: none;
-  color: black;
-  font-family: 'Oswald', sans-serif;
+  color: $color-black;
+  @include font-oswald ();
 }

@@ -1,10 +1,8 @@
 .advantages-food__title {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: normal;
+  @include font-arial ();
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: $color-black;
 }
 
 .advantages-food__list {
@@ -19,12 +17,10 @@
   margin-bottom: 20px;
   padding-top: 4px;
   padding-bottom: 4px;
-  font-family: "Arial";
-  font-style: normal;
-  font-weight: normal;
+  @include font-arial ();
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $color-gray;
   &-first::before {
     display: inline-block;
     content: "";

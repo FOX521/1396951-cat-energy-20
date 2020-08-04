@@ -1,8 +1,7 @@
 .nav {
-  background-color: white;
-  color: black;
-  font-family: "Oswald";
-  font-style: normal;
+  background-color: $color-white;
+  color: $color-black;
+  @include font-oswald ();
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -18,11 +17,11 @@
 
 .main-list__link {
   text-decoration: none;
-  color: black;
+  color: $color-black;
 }
 
 .main-list__item {
   padding-top: 22px;
   padding-bottom: 24px;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid transparent;
 }

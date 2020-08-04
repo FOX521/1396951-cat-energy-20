@@ -1,11 +1,8 @@
 
 .additional-products__title {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: normal;
+  @include font-oswald ();
   font-size: 24px;
   line-height: 24px;
-  color: $color-black;
 }
 
 .additional-list {
@@ -16,12 +13,10 @@
 
 
 .additional-list__title {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: normal;
+  @include font-oswald ();
   font-size: 16px;
-  text-transform: uppercase;
   line-height: 16px;
+  text-transform: uppercase;
 }
 
 .additional-table {
@@ -35,19 +30,14 @@
 
 .additional-table__column {
   padding-right: 189px;
-  font-family: "Arial";
-  font-style: normal;
-  font-weight: normal;
+  @include font-arial ();
   font-size: 14px;
   line-height: 14px;
-  color: $color-black;
 }
 
 .additional-list__button {
   text-decoration: none;
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: normal;
+  @include font-oswald ();
   text-transform: uppercase;
   font-size: 16px;
   line-height: 0px;
