@@ -11,16 +11,17 @@
 }
 
 .advantages-food__item {
+  @include font-arial ();
   margin: 0;
   padding: 0;
   margin-top: 20px;
   margin-bottom: 20px;
   padding-top: 4px;
   padding-bottom: 4px;
-  @include font-arial ();
   font-size: 14px;
   line-height: 18px;
-  color: $color-gray;
+  color: $color-grey;
+
   &-first::before {
     display: inline-block;
     content: "";
@@ -32,6 +33,7 @@
     width: 60px;
     height: 60px;
   }
+
   &-second::before {
     display: inline-block;
     content: "";
@@ -43,6 +45,7 @@
     width: 60px;
     height: 60px;
   }
+
   &-thirth::before {
     display: inline-block;
     content: "";
@@ -54,6 +57,7 @@
     width: 60px;
     height: 60px;
   }
+
   &-fourth::before {
     display: inline-block;
     content: "";

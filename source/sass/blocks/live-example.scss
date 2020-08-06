@@ -17,18 +17,6 @@
   color: $color-grey;
 }
 
-.list-example {
-  list-style: none;
-}
-
-.list-example__item {
-  @include font-oswald ();
-  font-size: 24px;
-  line-height: 24px;
-  color: $color-black;
-  margin-top: 10px;
-}
-
 .live-example__spend-for-food {
   @include font-oswald ();
   font-size: 14px;

@@ -1,11 +1,11 @@
 @mixin font-oswald () {
-  font-family: Oswald , sans-serif;
+  font-family: "Oswald", "Arial Narrow", sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 
 @mixin font-arial () {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", "Arial Narrow", sans-serif;
   font-style: normal;
   font-weight: normal;
 }

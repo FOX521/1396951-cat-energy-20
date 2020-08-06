@@ -1,31 +1,34 @@
-.catalog-list {
+.additional-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.catalog-list__title {
+
+.additional-list__title {
   @include font-oswald ();
   font-size: 16px;
-  line-height: 20px;
+  line-height: 16px;
   text-transform: uppercase;
 }
 
-.table {
-  margin-bottom: 22px;
+.additional-table {
+  margin-bottom: 25px;
 }
 
-.table__rows {
-  padding-bottom: 2px;
+.additional-table__rows {
+  padding-top: 13px;
+  padding-bottom: 15px;
 }
 
-.table__column {
+.additional-table__column {
   @include font-arial ();
-  padding-right: 75px;
-  font-size: 12px;
-  line-height: 16px;
-  color: $color-grey;
+  padding-right: 189px;
+  font-size: 14px;
+  line-height: 14px;
 }
 
-.catalog-list__link {
+.additional-list__button {
   @include font-oswald ();
   text-decoration: none;
   text-transform: uppercase;

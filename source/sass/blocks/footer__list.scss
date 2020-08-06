@@ -7,11 +7,10 @@
 }
 
 .social-list__vk {
-  text-decoration: none;
   &::after {
-    content: "";
     width: 23px;
     height: 16px;
+    content: "";
     background-image: url("../img/icon-vk.svg");
     background-repeat: no-repeat;
     display: inline-block;
@@ -19,24 +18,21 @@
 }
 
 .social-list__inst {
-  text-decoration: none;
   &::after {
-    content: "";
     width: 23px;
     height: 16px;
+    content: "";
     background-image: url("../img/icon-insta.svg");
-    background-repeat: no-repeat;
     background-repeat: no-repeat;
     display: inline-block;
   }
 }
 
 .social-list__fb {
-  text-decoration: none;
   &::after {
-    content: "";
     width: 23px;
     height: 16px;
+    content: "";
     background-image: url("../img/icon-fb.svg");
     background-repeat: no-repeat;
     display: inline-block;
