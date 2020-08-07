@@ -1,0 +1,6 @@
+.main__title {
+  @include font-oswald ();
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-black;
+}

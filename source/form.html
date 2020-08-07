@@ -36,89 +36,98 @@
     </header>
     <main class="main">
       <h1 class="main__title">Подбор программы</h1>
-      <form class="main-form" action="https://echo.htmlacademy.ru"  method="POST">
-        <fieldset class="main-form__fieldset">
-          <legend class="main-form__legend"><span class="visually-hidden">Обратная связь</span></legend>
-          <h2 class="main-form__title">
+      <form class="form" action="https://echo.htmlacademy.ru"  method="POST">
+        <fieldset class="form__fieldset fieldset-collback">
+          <legend class="fieldset-collback__legend"><span class="visually-hidden">Обратная связь</span></legend>
+          <h2 class="fieldset-collback__title">
             Заполните анкету, и мы подберем
             программу питания для вашего кота
           </h2>
-          <ul class="main-form__list list-for-cat">
-            <li class="list-for-cat__item">
-              <label class="list-for-cat__label">
-                ИМЯ:* <input type="text" name="name-pet" required>
+          <ul class="fieldset-collback__list-for-cat">
+            <li class="fieldset-collback__item-for-cat">
+              <label class="fieldset-collback__label-for-cat">
+                ИМЯ:* <input class="fieldset-collback__input-for-cat" type="text" name="name-pet" required placeholder="Матроскин">
               </label>
             </li>
-            <li class="list-for-cat__item">
-              <label class="list-for-cat__label">
-                Вес (кг):* <input type="number" name="weight-pet" required>
+            <li class="fieldset-collback__item-for-cat">
+              <label class="fieldset-collback__label-for-cat">
+                Вес (кг):* <input class="fieldset-collback__input-for-cat" type="text" name="weight-pet" required placeholder="30кг">
               </label>
             </li>
-            <li class="list-for-cat__item">
-              <label class="list-for-cat__label">
-                Возраст (лет): <input type="number" name="age-pet">
-              </label>
-            </li>
-          </ul>
-          <ul class="main-form__list list-for-program">
-            <li class="list-for-program__item">
-              <label class="list-for-program__label">
-                <input type="radio" name="choose-program" value="lose-weight">Похудение
-              </label>
-            </li>
-            <li class="list-for-program__item">
-              <label class="list-for-program__label">
-                <input type="radio" name="choose-program" value="gain-weight">Набор массы
-              </label>
-            </li>
-            <li class="list-for-program__item">
-              <label class="list-for-program__label">
-                <input type="radio" name="choose-program" value="advice">Не знаю (Нужен ваш совет)
+            <li class="fieldset-collback__item-for-cat">
+              <label class="fieldset-collback__label-for-cat">
+                Возраст (лет): <input class="fieldset-collback__input-for-cat" type="text" name="age-pet" placeholder="70">
               </label>
             </li>
           </ul>
-        </fieldset>
-        <fieldset class="main-form__fieldset">
-          <legend class="main-form__legend">Контактные данные (владельца кота)</legend>
-          <label>
-            E-mail:*<input type="email" name="e-mail" required>
-          </label>
-          <label>
-            Телефон:*<input type="number" name="customer-phone" required>
-          </label>
-        </fieldset>
-        <fieldset class="main-form__fieldset">
-          <legend class="main-form__legend">Комментарий</legend>
-          <textarea cols="30" rows="10" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </fieldset>
-        <fieldset class="main-form__fieldset">
-          <legend class="main-form__legend">Дополнительно</legend>
-          <ul class="main-form__addivites addivites-list">
-            <li class="addivites-list__item">
-              <label class="addivites-list__label">
-                <input type="checkbox" name="insugar" >Сахарозаменитель
+          <ul class="fieldset-collback___list-for-program">
+            <li class="fieldset-collback__item-for-program">
+              <label class="fieldset-collback__label-for-program">
+                <input class="fieldset-collback__input-for-program" type="radio" name="choose-program" value="lose-weight">Похудение
               </label>
             </li>
-            <li class="addivites-list__item">
-              <label class="addivites-list__label">
-                <input type="checkbox" name="drink-water">Питьевая вода
+            <li class="fieldset-collback__item-for-program">
+              <label class="fieldset-collback__label-for-program">
+                <input class="fieldset-collback__input-for-program" type="radio" name="choose-program" value="gain-weight">Набор массы
               </label>
             </li>
-            <li class="addivites-list__item">
-              <label class="addivites-list__label">
-                <input type="checkbox" name="milk">Молоко
-              </label>
-            </li>
-            <li class="addivites-list__item">
-              <label class="addivites-list__label">
-                <input type="checkbox" name="vita">Витамины
+            <li class="fieldset-collback__item-for-program">
+              <label class="fieldset-collback__label-for-program">
+                <input class="fieldset-collback__input-for-program" type="radio" name="choose-program" value="advice">Не знаю (Нужен ваш совет)
               </label>
             </li>
           </ul>
         </fieldset>
-        <button class="main-form__button" type="submit">Отправить заявку</button>
+        <fieldset class="form__fieldset fieldset-contacts">
+          <legend class="fieldset-contacts__legend"><span class="visually-hidden">Ваши контактные данные</span></legend>
+          <h2 class="fieldset-contacts__title">Контактные данные (владельца кота)</h2>
+          <ul class="fieldset-contacts__list ">
+            <li class="fieldset-contacts__item">
+              <label class="fieldset-contacts__label">
+            E-mail:*<input class="fieldset-contacts__input-email" type="email" name="e-mail" required placeholder="kuklachev@gmail.com">
+              </label>
+            </li>
+            <li class="fieldset-contacts__item">
+              <label class="fieldset-contacts__label">
+            Телефон:*<input class="fieldset-contacts__input-phone" type="text" name="customer-phone" required placeholder="8 (960) 900-60-90">
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__fieldset fieldset-comments">
+          <legend class="fieldset-comments__legend"><span class="visually-hidden">Комментарий</span></legend>
+          <h2 class="fieldset-comments__title">Комментарий</h2>
+          <textarea class="fieldset-comments__textarea" cols="30" rows="10" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="form__fieldset fieldset-addivites">
+          <legend class="fieldset-addivites__legend"><span class="visually-hidden">Дополнительные товары</span></legend>
+          <h2 class="fieldset-addivites__title">Дополнительно</h2>
+          <ul class="fieldset-addivites__list">
+            <li class="fieldset-addivites__item">
+              <label class="fieldset-addivites__label">
+                <input class="fieldset-addivites__input" type="checkbox" name="insugar" >Сахарозаменитель
+              </label>
+            </li>
+            <li class="fieldset-addivites__item">
+              <label class="fieldset-addivites__label">
+                <input class="fieldset-addivites__input" type="checkbox" name="drink-water">Питьевая вода
+              </label>
+            </li>
+            <li class="fieldset-addivites__item">
+              <label class="fieldset-addivites__label">
+                <input class="fieldset-addivites__input" type="checkbox" name="milk">Молоко
+              </label>
+            </li>
+            <li class="fieldset-addivites__item">
+              <label class="fieldset-addivites__label">
+                <input class="fieldset-addivites__input" type="checkbox" name="vita">Витамины
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="form__button" type="submit">Отправить заявку</button>
+        <p class="form__warning">* — Обязательные поля</p>
       </form>
-      <p class="main__warning">* — Обязательные поля</p>
     </main>
     <footer class="footer">
       <section class="footer__contacts">
