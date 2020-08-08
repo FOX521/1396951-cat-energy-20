@@ -1,12 +1,35 @@
-.social-list {
+.footer__contacts-title {
+  @include font-oswald ();
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.footer__contacts-addres {
+  @include font-arial ();
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-grey;
+}
+
+.footer__contacts-iframe {
+  border: none;
+  width: max-content;
+}
+
+.footer__social {
+  background-color: $color-dirty-grey;
+}
+
+.footer__social-list {
   list-style: none;
 }
 
-.social-list__item {
+.footer__social-list-item {
   margin-top: 10px;
 }
 
-.social-list__vk {
+.footer__social-list-vk {
   &::after {
     width: 23px;
     height: 16px;
@@ -17,7 +40,7 @@
   }
 }
 
-.social-list__inst {
+.footer__social-list-inst {
   &::after {
     width: 23px;
     height: 16px;
@@ -28,7 +51,7 @@
   }
 }
 
-.social-list__fb {
+.footer__social-list-fb {
   &::after {
     width: 23px;
     height: 16px;
