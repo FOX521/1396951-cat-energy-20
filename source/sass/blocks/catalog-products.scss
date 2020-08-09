@@ -1,4 +1,4 @@
-.catalog__title {
+.catalog-products__headline {
   @include font-oswald ();
   font-size: 36px;
   line-height: 36px;
@@ -71,20 +71,20 @@
   text-align: center;
 }
 
-.catalog-products__all-products__title {
+.catalog-products__all-products-title {
   @include font-oswald ();
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 }
 
-.catalog-products__all-products__tagline {
+.catalog-products__all-products-tagline {
   @include font-arial ();
   font-size: 12px;
   line-height: 16px;
 }
 
-.catalog-products__all-products__button {
+.catalog-products__all-products-button {
   @include font-oswald ();
   cursor: pointer;
   background-color: $color-dirty-grey;

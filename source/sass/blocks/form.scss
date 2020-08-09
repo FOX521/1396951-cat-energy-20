@@ -1,3 +1,10 @@
+.form__title {
+  @include font-oswald ();
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-black;
+}
+
 .form__fieldset {
   border: none;
 }
@@ -23,17 +30,92 @@
   line-height: 16px;
 }
 
-.additional-products-offer {
-  background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: 78px 80px, 280px 289px;
-  height: 289px;
-  background-position: 95px 32px, 0;
+.form__fieldset-collback-title {
+  @include font-oswald ();
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-black;
 }
 
-.additional-products-offer__describe {
-  @include font-arial ();
+.form__fieldset-collback-list-for-cat,
+.form__fieldset-collback-list-for-program {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid $color-border-light;
+  padding-bottom: 22px;
+}
+
+.form__fieldset-collback-item-for-cat,
+.form__fieldset-collback-item-for-program {
+  margin-top: 10px;
+}
+
+.form__fieldset-collback-label-for-cat,
+.form__fieldset-collback-label-for-program {
+  @include font-oswald ();
   font-size: 16px;
-  line-height: 20px;
-  color: $color-white;
+  line-height: 18px;
+  color: $color-black;
+  text-transform: uppercase;
+}
+
+.form__fieldset-collback-input-for-cat,
+.form__fieldset-contacts-input-email,
+.form__fieldset-contacts-input-phone {
+  width: 229px;
+  height: 45px;
+  margin-left: 13px;
+  padding-left: 16px;
+  border: 1px solid $color-border-grey;
+  box-sizing: border-box;
+}
+
+.form__fieldset-collback-input-for-program,
+.form__fieldset-addivites-input {
+  margin-right: 16px;
+}
+
+.form__fieldset-contacts-title,
+.form__fieldset-comments-title,
+.form__fieldset-addivites-title {
+  @include font-oswald ();
+  font-size: 24px;
+  line-height: 26px;
+  color: $color-black;
+}
+
+.form__fieldset-contacts-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form__fieldset-contacts-item {
+  margin-top: 14px;
+}
+
+.form__fieldset-contacts-label,
+.form__fieldset-addivites-label {
+  @include font-oswald ();
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-grey;
+}
+
+.form__fieldset-comments-textarea {
+  width: 280px;
+  height: 150px;
+}
+
+.form__fieldset-addivites-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__fieldset-addivites-item {
+  margin-top: 20px;
 }
