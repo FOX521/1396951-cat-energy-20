@@ -1,0 +1,26 @@
+.live-example {
+  @include font-oswald ();
+  background-color: $color-dirty-grey;
+}
+
+.live-example__title {
+  @include font-oswald ();
+  font-size: 36px;
+  line-height: 40px;
+  color: $color-black;
+}
+
+.live-example__describe {
+  @include font-arial ();
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-grey;
+}
+
+.live-example__spend-for-food {
+  @include font-oswald ();
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}

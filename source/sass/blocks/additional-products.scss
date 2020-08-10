@@ -1,0 +1,80 @@
+.additional-products__title {
+  @include font-oswald ();
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.additional-products__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.additional-products__item {
+  margin-top: 10px;
+}
+
+.additional-products__title-item {
+  @include font-oswald ();
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.additional-products__table {
+  margin-bottom: 25px;
+}
+
+.additional-products__table-rows {
+  padding-top: 13px;
+  padding-bottom: 15px;
+}
+
+.additional-products__table-column-first {
+  @include font-arial ();
+  width: 230px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.additional-products__table-column-second {
+  @include font-arial ();
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.additional-products__button {
+  @include font-oswald ();
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 0px;
+  color: $color-white;
+  background-color: $color-green;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 109px;
+  padding-left: 109px;
+  margin-top: 10px;
+}
+
+.additional-products__offer {
+  background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 78px 80px, 280px 289px;
+  height: 289px;
+  background-position: 95px 32px, 0;
+  border: 1px solid transparent;
+  margin-top: 50px;
+}
+
+.additional-products__offer-describe {
+  @include font-arial ();
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-white;
+  width: 160px;
+  text-align: center;
+  margin-top: 168px;
+  margin-left: 58px;
+}

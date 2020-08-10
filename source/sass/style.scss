@@ -1,1 +1,17 @@
-// Начните писать стили здесь
+@import "valriables.scss";
+@import "mixins.scss";
+@import "global-styles.scss";
+@import "blocks/nav.scss";
+@import "blocks/main-list.scss";
+@import "blocks/promo.scss";
+@import "blocks/catalog-slim.scss";
+@import "blocks/catalog-pro.scss";
+@import "blocks/advantages-food.scss";
+@import "blocks/live-example.scss";
+@import "blocks/copyright.scss";
+@import "blocks/header-block.scss";
+@import "blocks/catalog-products.scss";
+@import "blocks/additional-products.scss";
+@import "blocks/list-example.scss";
+@import "blocks/form.scss";
+@import "blocks/footer.scss";

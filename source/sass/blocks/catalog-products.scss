@@ -1,0 +1,96 @@
+.catalog-products__headline {
+  @include font-oswald ();
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-black;
+}
+
+.catalog-products__list {
+  list-style: none;
+  margin: 1px;
+  padding: 1px;
+}
+
+.catalog-products__item {
+  @include font-oswald ();
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog-products__title {
+  @include font-oswald ();
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-black;
+  text-transform: uppercase;
+}
+
+.catalog-products__table {
+  margin-bottom: 22px;
+}
+
+.catalog-products__table-rows {
+  padding-bottom: 2px;
+}
+
+.catalog-products__table-column-first {
+  @include font-arial ();
+  padding-right: 75px;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-grey;
+}
+
+.catalog-products__table-column-second {
+  @include font-arial ();
+  padding-right: 75px;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-grey;
+}
+
+.catalog-products__link {
+  @include font-oswald ();
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 0px;
+  color: $color-white;
+  background-color: $color-green;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 109px;
+  padding-left: 109px;
+  margin-top: 10px;
+}
+
+.catalog-products__all-products {
+  border: 1px solid $color-border-grey;
+  width: 279px;
+  text-align: center;
+}
+
+.catalog-products__all-products-title {
+  @include font-oswald ();
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog-products__all-products-tagline {
+  @include font-arial ();
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog-products__all-products-button {
+  @include font-oswald ();
+  cursor: pointer;
+  background-color: $color-dirty-grey;
+  border: none;
+  padding: 20px 94px 20px 94px;
+  font-size: 16px;
+  line-height: 0px;
+  text-transform: uppercase;
+}

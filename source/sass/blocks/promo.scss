@@ -1,0 +1,44 @@
+.promo {
+  position: relative;
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 20px 170px, 1px 1px;
+  height: 480px;
+}
+
+.promo__title {
+  @include font-oswald ();
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-white;
+  text-align: center;
+  width: 249px;
+  margin-top: 26px;
+  margin-left: 36px;
+}
+
+.promo__describe {
+  @include font-oswald ();
+  color: $color-white;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-left: 60px;
+  margin-top: 50px;
+  min-width: 198px;
+}
+
+.promo__button {
+  @include font-oswald ();
+  position: absolute;
+  bottom: 1px;
+  left: 50px;
+  display: inline-block;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 44px;
+  padding-right: 44px;
+  background-color: $color-green;
+  text-decoration: none;
+  color: $color-white;
+}
