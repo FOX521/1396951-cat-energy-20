@@ -9,9 +9,9 @@
     </head>
     <body class="body">
         <header class="header">
-            <div class="header-block">
-                <a href="#" class="header-block__logo">
-                <img class="header-block__img" src="img/logo-mobile.svg" width="300" height="50"  alt="Логотип интернет-магазина Cat energy">
+            <div class="header__block">
+                <a href="#" class="header__block-logo">
+                <img class="header__block-img" src="img/logo-mobile.svg" width="300" height="50"  alt="Логотип интернет-магазина Cat energy">
                 </a>
             </div>
             <nav class="nav">
@@ -35,7 +35,7 @@
                 </ul>
             </nav>
         </header>
-        <main class="main">
+        <main class="main container">
             <section class="promo">
                 <h1 class="promo__title">Функциональное питание для котов</h1>
                 <p class="promo__describe">Занялся собой? Займись котом!</p>
@@ -110,6 +110,7 @@
         </main>
         <footer class="footer">
             <section class="footer__contacts">
+              <div class="footer__contacts-block">
                 <h3 class="footer__contacts-title">
                     приглашаем
                     к сотрудничеству дилеров!
@@ -119,6 +120,7 @@
                     Конюшенная, д. 19/8
                     Санкт-Петербург
                 </address>
+                </div>
                 <iframe class="footer__contacts-iframe" src="https://yandex.ru/map-widget/v1/-/CKaqv4yt" width="150" height="150"></iframe>
             </section>
             <section class="footer__social">
@@ -142,16 +144,14 @@
                         </a>
                     </li>
                 </ul>
-            </section>
-            <section class="footer__copyright">
-                <p class="footer__copyright-describe">
-                    <a href="#" class="footer__copyright-link" href="#">
+                <p class="footer__social-copyright-describe">
+                    <a href="#" class="footer__social-copyright-link" href="#">
                     HTML Academy
                     </a>
-                </p>
-                <p class="footer__copyright-logo">
-                    <img src="img/htmlacademy.svg" width="150" height="150" alt="Логотип разработчика сайта">
-                </p>
+                    <a href="#" class="footer__social-copyright-link" href="#"">
+                      <img class="footer__social-copyright-img" src="img/htmlacademy.svg" width="150" height="150" alt="Логотип разработчика сайта">
+                    </a>
+                    </p>
             </section>
         </footer>
     </body>

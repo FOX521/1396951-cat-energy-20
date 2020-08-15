@@ -1,6 +1,11 @@
 .live-example {
   @include font-oswald ();
   background-color: $color-dirty-grey;
+  border: 1px solid transparent;
+
+  @include taplet-up () {
+    margin: 0;
+  }
 }
 
 .live-example__title {
@@ -8,6 +13,20 @@
   font-size: 36px;
   line-height: 40px;
   color: $color-black;
+  margin-top: 27px;
+  margin-left: 20px;
+
+  @include taplet-up () {
+    margin-top: 43px;
+    margin-left: 30px;
+    margin-bottom: 63px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @include desktop-up () {
+    margin-bottom: 146px;
+  }
 }
 
 .live-example__describe {
@@ -15,6 +34,17 @@
   font-size: 14px;
   line-height: 18px;
   color: $color-grey;
+
+  @include taplet-up () {
+    margin: 0 30px;
+    margin-bottom: 54px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @include desktop-up () {
+    max-width: 436px;
+  }
 }
 
 .live-example__spend-for-food {
@@ -23,4 +53,18 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+
+  @include desktop-up {
+    margin-top: 55px;
+    padding-left: 40px;
+    text-align: start;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.live-example__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }

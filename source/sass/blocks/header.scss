@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include taplet-up () {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.header__block {
+  padding: 0 auto;
+  width: 320px;
+  height: 51px;
+}
+
+.header-block__img {
+  width: auto;
+  margin: auto;
+
+  @include taplet-up () {
+    width: 300px;
+  }
+}
