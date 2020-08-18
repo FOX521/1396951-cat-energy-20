@@ -11,6 +11,12 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @include desktop-up {
+    margin-top: 77px;
+    margin-left: 110px;
+    margin-bottom: 56px;
+  }
 }
 
 .form__fieldset {
@@ -37,6 +43,14 @@
     margin-top: 54px;
     margin-left: 70px;
   }
+
+  @include desktop-up {
+    padding: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    min-width: 568px;
+    text-align: center;
+  }
 }
 
 .form__warning {
@@ -54,6 +68,7 @@
 
 .form__fieldset-collback-title {
   @include font-oswald ();
+  margin-bottom: 66px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -67,11 +82,15 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @include desktop-up {
+    margin-left: 110px;
+    margin-bottom: 66px;
+  }
 }
 
 .form__fieldset-collback-list-for-cat {
   margin: 0;
-  margin-top: 66px;
   padding: 0;
   list-style: none;
   border-bottom: 1px solid $color-border-light;
@@ -80,6 +99,11 @@
   @include taplet-up () {
     margin-left: 70px;
     border: none;
+  }
+
+  @include desktop-up {
+    display: inline-block;
+    margin-left: 110px;
   }
 }
 
@@ -97,6 +121,12 @@
     padding-left: 27px;
     padding-bottom: 25px;
     border: 1px solid $color-border-light;
+  }
+
+  @include desktop-up {
+    display: inline-block;
+    min-width: 500px;
+    margin-top: 0;
   }
 }
 
@@ -191,17 +221,30 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @include desktop-up {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form__fieldset-contacts-input-email {
   @include taplet-up () {
     width: 551px;
   }
+
+  @include desktop-up {
+    width: 486px;
+  }
 }
 
 .form__fieldset-contacts-input-phone {
   @include taplet-up () {
-    min-width: 535px;
+    width: 535px;
+  }
+
+  @include desktop-up {
+    width: 472px;
   }
 }
 
@@ -242,6 +285,10 @@
     min-height: 174;
     margin-left: 70px;
   }
+
+  @include desktop-up {
+    width: 1220px;
+  }
 }
 
 .form__fieldset-addivites-list {
@@ -253,6 +300,10 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: 70px;
+  }
+
+  @include desktop-up {
+    justify-content: space-between;
   }
 }
 
