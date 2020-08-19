@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Noto+Sans:wght@700&family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
     </head>
     <body class="body">
-        <header class="header">
+        <header class="header container">
             <div class="header-block">
                 <a href="#" class="header-block__logo">
                 <img class="header-block__img" src="img/logo-mobile.svg" width="100" height="50"  alt="Логотип интернет-магазина Cat energy">
@@ -36,7 +36,7 @@
             </nav>
         </header>
         <main class="main">
-            <form class="form" action="https://echo.htmlacademy.ru"  method="POST">
+            <form class="form container" action="https://echo.htmlacademy.ru"  method="POST">
                 <h1 class="form__title">Подбор программы</h1>
                 <fieldset class="form__fieldset form__fieldset-collback">
                     <legend class="form__fieldset-collback-legend"><span class="visually-hidden">Обратная связь</span></legend>
@@ -44,6 +44,7 @@
                         Заполните анкету, и мы подберем
                         программу питания для вашего кота
                     </h2>
+                    <div class="form__fieldset-collback-block">
                     <ul class="form__fieldset-collback-list-for-cat">
                         <li class="form__fieldset-collback-item-for-cat">
                             <label class="form__fieldset-collback-label-for-cat">
@@ -78,6 +79,7 @@
                             </label>
                         </li>
                     </ul>
+                    </div>
                 </fieldset>
                 <fieldset class="form__fieldset form__fieldset-contacts">
                     <legend class="form__fieldset-contacts-legend"><span class="visually-hidden">Ваши контактные данные</span></legend>
@@ -132,6 +134,7 @@
         </main>
         <footer class="footer">
           <section class="footer__contacts">
+            <div class="footer__contacts-block">
               <h3 class="footer__contacts-title">
                   приглашаем
                   к сотрудничеству дилеров!
@@ -141,6 +144,7 @@
                   Конюшенная, д. 19/8
                   Санкт-Петербург
               </address>
+              </div>
               <iframe class="footer__contacts-iframe" src="https://yandex.ru/map-widget/v1/-/CKaqv4yt" width="150" height="150"></iframe>
           </section>
           <section class="footer__social">

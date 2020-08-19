@@ -13,6 +13,7 @@
 
   @include desktop-up {
     padding: 0;
+    margin-left: 110px;
     width: auto;
     border: none;
   }
@@ -26,6 +27,7 @@
   @include desktop-up {
     display: inline-block;
     width: 896px;
+    margin-left: 50px;
   }
 }
 
@@ -64,11 +66,14 @@
   margin-bottom: 25px;
 
   @include taplet-up () {
-    width: 50%;
+    width: 60%;
+    margin-left: auto;
   }
 
   @include desktop-up {
-    width: 30%;
+    margin-left: auto;
+    margin-right: 20px;
+    width: 300px;
   }
 }
 
@@ -85,6 +90,10 @@
 
   @include taplet-up {
     text-align: end;
+  }
+
+  @include desktop-up {
+    text-align: start;
   }
 }
 
@@ -112,6 +121,13 @@
 
   @include taplet-up () {
     flex-grow: 1;
+    width: 632px;
+  }
+
+  @include desktop-up {
+    flex-grow: 0;
+    width: 210px;
+    height: 0;
   }
 }
 
@@ -137,7 +153,6 @@
     display: inline-block;
     min-width: 245px;
     margin: 0;
-    margin-left: 79px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: auto;
@@ -161,5 +176,20 @@
     right: 124px;
     margin: 0;
     text-align: start;
+  }
+
+  @include desktop-up {
+    top: 165px;
+    right: 40px;
+    text-align: center;
+  }
+}
+
+.additional-products__block {
+  @include desktop-up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
   }
 }

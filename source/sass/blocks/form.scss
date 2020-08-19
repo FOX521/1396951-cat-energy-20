@@ -14,7 +14,7 @@
 
   @include desktop-up {
     margin-top: 77px;
-    margin-left: 110px;
+    margin-left: 71px;
     margin-bottom: 56px;
   }
 }
@@ -25,6 +25,7 @@
 
 .form__button {
   @include font-oswald ();
+  width: 100%;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -38,6 +39,7 @@
   margin-bottom: 21px;
 
   @include taplet-up () {
+    width: 282px;
     font-size: 20px;
     line-height: 40px;
     margin-top: 54px;
@@ -55,6 +57,7 @@
 
 .form__warning {
   @include font-oswald ();
+  text-align: center;
   font-size: 14px;
   line-height: 16px;
 
@@ -62,7 +65,7 @@
     display: inline;
     font-size: 16px;
     line-height: 16px;
-    margin-left: 61px;
+    margin-left: 100px;
   }
 }
 
@@ -76,7 +79,8 @@
 
   @include taplet-up () {
     margin: 0;
-    margin-left: 70px;
+    margin-left: 60px;
+    margin-bottom: 66px;
     width: 323px;
     text-align: start;
     font-size: 20px;
@@ -84,8 +88,16 @@
   }
 
   @include desktop-up {
-    margin-left: 110px;
+    margin-left: 60px;
     margin-bottom: 66px;
+  }
+}
+
+.form__fieldset-collback-block {
+  @include desktop-up {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
 
@@ -97,13 +109,14 @@
   padding-bottom: 22px;
 
   @include taplet-up () {
+    padding: 0;
     margin-left: 70px;
     border: none;
   }
 
   @include desktop-up {
     display: inline-block;
-    margin-left: 110px;
+    margin-left: 60px;
   }
 }
 
@@ -112,10 +125,11 @@
   padding: 0;
   list-style: none;
   border-bottom: 1px solid $color-border-light;
+  padding-top: 22px;
   padding-bottom: 22px;
 
   @include taplet-up () {
-    margin-top: 102px;
+    margin-top: 71px;
     margin-left: 70px;
     padding-top: 30px;
     padding-left: 27px;
@@ -125,8 +139,10 @@
 
   @include desktop-up {
     display: inline-block;
-    min-width: 500px;
+    min-width: 541px;
     margin-top: 0;
+    padding: 0;
+    padding-bottom: 30px;
   }
 }
 
@@ -154,42 +170,48 @@
   box-sizing: border-box;
 }
 
+.form__fieldset-collback-item-for-program {
+  margin-top: 18px;
+}
+
 .form__fieldset-collback-input-for-cat-name {
-  min-width: 229px;
+  width: 187px;
   margin-left: 13px;
   padding-left: 16px;
   border: 1px solid $color-border-grey;
   box-sizing: border-box;
 
   @include taplet-up () {
-    min-width: 567px;
+    min-width: 559px;
     margin-bottom: 20px;
   }
 }
 
 .form__fieldset-collback-input-for-cat-weight {
-  min-width: 204px;
+  width: 165px;
+  margin-top: 10px;
   margin-left: 13px;
   padding-left: 16px;
   border: 1px solid $color-border-grey;
   box-sizing: border-box;
 
   @include taplet-up () {
-    min-width: 536px;
+    min-width: 526px;
     margin-left: 18px;
     margin-bottom: 20px;
   }
 }
 
 .form__fieldset-collback-input-for-cat-age {
-  min-width: 172px;
+  width: 132px;
+  margin-top: 10px;
   margin-left: 13px;
   padding-left: 16px;
   border: 1px solid $color-border-grey;
   box-sizing: border-box;
 
   @include taplet-up () {
-    min-width: 497px;
+    width: 484px;
     margin-left: 18px;
   }
 }
@@ -210,7 +232,7 @@
   color: $color-black;
 
   @include taplet-up () {
-    margin-left: 70px;
+    margin-left: 60px;
     font-size: 36px;
     line-height: 36px;
     border-top: 2px solid $color-green;
@@ -229,8 +251,10 @@
 }
 
 .form__fieldset-contacts-input-email {
+  width: 177px;
+
   @include taplet-up () {
-    width: 551px;
+    width: 555px;
   }
 
   @include desktop-up {
@@ -245,6 +269,7 @@
 
   @include desktop-up {
     width: 472px;
+    margin-right: 69px;
   }
 }
 
@@ -272,16 +297,16 @@
 
 .form__fieldset-contacts-label {
   @include taplet-up () {
-    margin-left: 70px;
+    margin-left: 60px;
   }
 }
 
 .form__fieldset-comments-textarea {
-  width: 280px;
+  width: 100%;
   height: 150px;
 
   @include taplet-up () {
-    min-width: 631px;
+    min-width: 620px;
     min-height: 174;
     margin-left: 70px;
   }
@@ -299,11 +324,8 @@
   @include taplet-up () {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 70px;
-  }
-
-  @include desktop-up {
     justify-content: space-between;
+    margin-left: 60px;
   }
 }
 
