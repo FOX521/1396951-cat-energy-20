@@ -1,0 +1,8 @@
+.catalog {
+  @include desktop-up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 80px;
+  }
+}

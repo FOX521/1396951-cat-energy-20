@@ -2,15 +2,16 @@
 <html class="page" lang="ru">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Интернет мгазин Cat energy</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Noto+Sans:wght@700&family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
     </head>
     <body class="body">
         <header class="header">
-            <div class="header-block">
-                <a href="#" class="header-block__logo">
-                <img class="header-block__img" src="img/logo-mobile.svg" width="300" height="50"  alt="Логотип интернет-магазина Cat energy">
+            <div class="header__block">
+                <a href="#" class="header__block-logo">
+                <img class="header__block-img" src="img/logo-mobile.svg" width="300" height="50"  alt="Логотип интернет-магазина Cat energy">
                 </a>
             </div>
             <nav class="nav">
@@ -35,13 +36,13 @@
             </nav>
         </header>
         <main class="main">
-            <section class="promo">
+            <section class="promo container">
                 <h1 class="promo__title">Функциональное питание для котов</h1>
                 <p class="promo__describe">Занялся собой? Займись котом!</p>
                 <a href="#" class="button promo__button">Подобрать программу</a>
             </section>
-            <section class="catalog">
-                <article class="catalog-slim">
+            <section class="catalog container">
+                <article class="catalog-slim container">
                     <h3 class="catalog-slim__title">похудение</h3>
                     <p class="catalog-slim__describe">
                         Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
@@ -49,7 +50,7 @@
                     </p>
                     <a href="#" class="catalog-slim__link">каталог slim</a>
                 </article>
-                <article class="catalog-pro">
+                <article class="catalog-pro container">
                     <h3 class="catalog-pro__title">Набор массы</h3>
                     <p class="catalog-pro__describe">
                         Заработать авторитет среди дворовых котов и даже собак?
@@ -58,7 +59,7 @@
                     <a href="#" class="catalog-pro__link">каталог pro</a>
                 </article>
             </section>
-            <section class="advantages-food">
+            <section class="advantages-food container">
                 <h2 class="advantages-food__title">Как это работает</h2>
                 <ul class="advantages-food__list">
                     <li class="advantages-food__item-first advantages-food__item">
@@ -101,14 +102,15 @@
                 <p class="live-example__spend-for-food">
                     Затраты на питание: 15 000 РУБ.
                 </p>
-                <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Fat cat">
-                <label>
+                <img class="live-example__img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Fat cat">
+                <label class="live-example__label">
                 было <input class="live-example__range" type="range"> стало
                 </label>
             </section>
         </main>
         <footer class="footer">
             <section class="footer__contacts">
+              <div class="footer__contacts-block">
                 <h3 class="footer__contacts-title">
                     приглашаем
                     к сотрудничеству дилеров!
@@ -118,6 +120,7 @@
                     Конюшенная, д. 19/8
                     Санкт-Петербург
                 </address>
+                </div>
                 <iframe class="footer__contacts-iframe" src="https://yandex.ru/map-widget/v1/-/CKaqv4yt" width="150" height="150"></iframe>
             </section>
             <section class="footer__social">
@@ -141,16 +144,14 @@
                         </a>
                     </li>
                 </ul>
-            </section>
-            <section class="footer__copyright">
-                <p class="footer__copyright-describe">
-                    <a href="#" class="footer__copyright-link" href="#">
+                <p class="footer__social-copyright-describe">
+                    <a href="#" class="footer__social-copyright-link" href="#">
                     HTML Academy
                     </a>
-                </p>
-                <p class="footer__copyright-logo">
-                    <img src="img/htmlacademy.svg" width="150" height="150" alt="Логотип разработчика сайта">
-                </p>
+                    <a href="#" class="footer__social-copyright-link" href="#"">
+                      <img class="footer__social-copyright-img" src="img/htmlacademy.svg" width="150" height="150" alt="Логотип разработчика сайта">
+                    </a>
+                    </p>
             </section>
         </footer>
     </body>

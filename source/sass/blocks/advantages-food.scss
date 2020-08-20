@@ -1,8 +1,30 @@
+.advantages-food {
+  margin: 0;
+
+  @include taplet-up () {
+    margin-top: 54px;
+  }
+}
+
 .advantages-food__title {
-  @include font-arial ();
+  @include font-oswald ();
+  margin: 0;
+  padding: 0;
   font-size: 36px;
   line-height: 40px;
   color: $color-black;
+
+  @include taplet-up () {
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 30px;
+    margin-bottom: 32px;
+  }
+
+  @include desktop-up {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantages-food__list {
@@ -10,24 +32,43 @@
   padding: 1px;
   list-style: none;
   text-decoration: none;
+
+  @include taplet-up () {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+    max-width: 0 30px;
+  }
 }
 
 .advantages-food__item {
   @include font-arial ();
+  position: relative;
   margin: 0;
   padding: 0;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 38px;
+  margin-bottom: 42px;
   padding-top: 4px;
   padding-bottom: 4px;
   font-size: 14px;
   line-height: 18px;
   color: $color-grey;
+
+  @include taplet-up () {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 280px;
+    width: 250px;
+  }
 }
 
 .advantages-food__item-first::before {
   display: inline-block;
   content: "";
+  float: left;
   background-color: $color-green;
   border-radius: 0%;
   background-image: url("../img/advantage-leaf@1x.png");
@@ -35,11 +76,17 @@
   background-position: 4px 7px;
   width: 60px;
   height: 60px;
+
+  @include taplet-up () {
+    position: absolute;
+    top: 40px;
+  }
 }
 
 .advantages-food__item-second::before {
   display: inline-block;
   content: "";
+  float: left;
   background-color: $color-green;
   border-radius: 0%;
   background-image: url("../img/advantage-powder@1x.png");
@@ -47,11 +94,17 @@
   background-position: 4px 7px;
   width: 60px;
   height: 60px;
+
+  @include taplet-up () {
+    position: absolute;
+    top: 40px;
+  }
 }
 
 .advantages-food__item-thirth::before {
   display: inline-block;
   content: "";
+  float: left;
   background-color: $color-green;
   border-radius: 0%;
   background-image: url("../img/advantage-dining@1x.png");
@@ -59,11 +112,17 @@
   background-position: 4px 7px;
   width: 60px;
   height: 60px;
+
+  @include taplet-up () {
+    position: absolute;
+    top: 40px;
+  }
 }
 
 .advantages-food__item-fourth::before {
   display: inline-block;
   content: "";
+  float: left;
   background-color: $color-green;
   border-radius: 0%;
   background-image: url("../img/advantage-clock@1x.png");
@@ -71,4 +130,9 @@
   background-position: 4px 7px;
   width: 60px;
   height: 60px;
+
+  @include taplet-up () {
+    position: absolute;
+    top: 40px;
+  }
 }

@@ -1,9 +1,29 @@
 .promo {
   position: relative;
+  margin-top: -2px;
+  margin-bottom: 22px;
   background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 20px 170px, 1px 1px;
   height: 480px;
+  border: 1px solid transparent;
+
+  @include taplet-up {
+    margin-top: 263px;
+    margin-bottom: 0;
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 690px;
+  }
+
+  @include desktop-up {
+    margin: 0;
+    margin-bottom: 82px;
+    background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 540px 143px, right top;
+  }
 }
 
 .promo__title {
@@ -15,6 +35,22 @@
   width: 249px;
   margin-top: 26px;
   margin-left: 36px;
+
+  @include taplet-up {
+    font-size: 60px;
+    line-height: 60px;
+    color: $color-black;
+    width: 414px;
+    text-align: start;
+  }
+
+  @include desktop-up {
+    margin-top: 223px;
+    margin-left: 190px;
+    margin-bottom: 40px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .promo__describe {
@@ -26,19 +62,47 @@
   margin-left: 60px;
   margin-top: 50px;
   min-width: 198px;
+
+  @include taplet-up {
+    color: $color-black;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  @include desktop-up {
+    margin: 0;
+    margin-left: 190px;
+    margin-bottom: 52px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .promo__button {
   @include font-oswald ();
-  position: absolute;
-  bottom: 1px;
-  left: 50px;
-  display: inline-block;
+  display: block;
   padding-top: 7px;
   padding-bottom: 7px;
+  margin: 279px auto;
+  text-align: center;
   padding-left: 44px;
   padding-right: 44px;
   background-color: $color-green;
   text-decoration: none;
   color: $color-white;
+
+  @include taplet-up () {
+    max-width: 244px;
+    margin-top: 29px;
+    margin-left: 83px;
+    padding: 12px 26px;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  @include desktop-up {
+    margin: 0;
+    margin-left: 190px;
+  }
 }

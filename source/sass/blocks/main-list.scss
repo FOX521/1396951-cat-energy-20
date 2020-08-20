@@ -2,6 +2,15 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @include taplet-up {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @include desktop-up () {
+    column-gap: 33px;
+  }
 }
 
 .main-list__link {
@@ -12,5 +21,13 @@
 .main-list__item {
   padding-top: 22px;
   padding-bottom: 24px;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid $color-border-light;
+
+  @include taplet-up () {
+    margin-right: 10px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    border-bottom: none;
+  }
 }

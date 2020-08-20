@@ -2,16 +2,50 @@
   @include font-oswald ();
   font-size: 24px;
   line-height: 24px;
+
+  @include taplet-up () {
+    margin-bottom: 0;
+    padding-left: 67px;
+    padding-bottom: 80px;
+    border-top: 2px solid $color-green;
+    border-bottom: 1px solid $color-tabel-row;
+  }
+
+  @include desktop-up {
+    padding: 0;
+    margin-left: 110px;
+    width: auto;
+    border: none;
+  }
 }
 
 .additional-products__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @include desktop-up {
+    display: inline-block;
+    width: 896px;
+    margin-left: 50px;
+  }
 }
 
 .additional-products__item {
-  margin-top: 10px;
+  @include taplet-up () {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding: 28px 38px;
+    border: 1px solid $color-tabel-row;
+    border-top: none;
+  }
+
+  @include desktop-up {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
 }
 
 .additional-products__title-item {
@@ -19,10 +53,28 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
+  @include taplet-up () {
+    width: auto;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional-products__table {
+  margin-top: 20px;
   margin-bottom: 25px;
+
+  @include taplet-up () {
+    width: 60%;
+    margin-left: auto;
+  }
+
+  @include desktop-up {
+    margin-left: auto;
+    margin-right: 20px;
+    width: 300px;
+  }
 }
 
 .additional-products__table-rows {
@@ -35,27 +87,48 @@
   width: 230px;
   font-size: 14px;
   line-height: 14px;
+
+  @include taplet-up {
+    text-align: end;
+  }
+
+  @include desktop-up {
+    text-align: start;
+  }
 }
 
 .additional-products__table-column-second {
   @include font-arial ();
+  padding: 0;
   font-size: 14px;
   line-height: 14px;
+  text-align: end;
 }
 
 .additional-products__button {
   @include font-oswald ();
+  text-align: center;
+  display: block;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 0px;
   color: $color-white;
   background-color: $color-green;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 109px;
-  padding-left: 109px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-top: 10px;
+
+  @include taplet-up () {
+    flex-grow: 1;
+    width: 632px;
+  }
+
+  @include desktop-up {
+    flex-grow: 0;
+    width: 210px;
+    height: 0;
+  }
 }
 
 .additional-products__offer {
@@ -66,6 +139,25 @@
   background-position: 95px 32px, 0;
   border: 1px solid transparent;
   margin-top: 50px;
+
+  @include taplet-up () {
+    position: relative;
+    min-width: 708px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+  }
+
+  @include desktop-up {
+    display: inline-block;
+    min-width: 245px;
+    margin: 0;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+  }
 }
 
 .additional-products__offer-describe {
@@ -77,4 +169,27 @@
   text-align: center;
   margin-top: 168px;
   margin-left: 58px;
+
+  @include taplet-up () {
+    position: absolute;
+    top: 91px;
+    right: 124px;
+    margin: 0;
+    text-align: start;
+  }
+
+  @include desktop-up {
+    top: 165px;
+    right: 40px;
+    text-align: center;
+  }
+}
+
+.additional-products__block {
+  @include desktop-up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
