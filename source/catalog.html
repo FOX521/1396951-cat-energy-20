@@ -8,32 +8,32 @@
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Noto+Sans:wght@700&family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
     </head>
     <body class="body">
-        <header class="header">
+        <header class="header container">
             <div class="header-block">
                 <a href="#" class="header-block__logo">
-                <img class="header-block__img" src="img/logo-mobile.svg" width="100" height="50"  alt="Логотип интернет-магазина Cat energy">
+                <img class="header-block__img" src="img/logo-mobile.svg" width="200" height="50"  alt="Логотип интернет-магазина Cat energy">
                 </a>
             </div>
-            <nav class="nav">
-                <button class="button nav__button"><span>Close</span></button>
-                <ul class="nav__list main-list">
-                    <li class="main-list__item">
-                        <a href="index.html" class="main-list__link">
-                        главная
-                        </a>
-                    </li>
-                    <li class="main-list__item">
-                        <a href="catalog.html" class="main-list__link">
-                        каталог продукции
-                        </a>
-                    </li>
-                    <li class="main-list__item">
-                        <a href="./form.html" class="main-list__link">
-                        подбор программы
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <nav class="nav nav__opened">
+              <button class="button nav__button"><span class="visually-hidden">Close</span></button>
+              <ul class="nav__list">
+                  <li class="nav__list-item">
+                      <a href="index.html" class="nav__list-link">
+                      главная
+                      </a>
+                  </li>
+                  <li class="nav__list-item">
+                      <a href="catalog.html" class="nav__list-link">
+                      каталог продукции
+                      </a>
+                  </li>
+                  <li class="nav__list-item">
+                      <a href="/form.html" class="nav__list-link">
+                      подбор программы
+                      </a>
+                  </li>
+              </ul>
+          </nav>
         </header>
         <main class="main">
             <section class="catalog-products">
@@ -327,5 +327,6 @@
                   </p>
           </section>
       </footer>
+      <script src="./js/script.js"></script>
   </body>
 </html>

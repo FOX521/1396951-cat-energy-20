@@ -7,6 +7,12 @@
     display: flex;
     flex-direction: row;
   }
+
+  @include desktop-up {
+    position: absolute;
+    width: 1380px;
+    z-index: 3;
+  }
 }
 
 .header__block {
@@ -15,11 +21,13 @@
   height: 51px;
 }
 
-.header-block__img {
-  width: auto;
-  margin: auto;
+.header__block-img {
+  width: 189px;
+  margin-top: -3px;
 
   @include taplet-up () {
-    width: 300px;
+    width: 185px;
+    margin-top: 16px;
+    margin-left: -3px;
   }
 }

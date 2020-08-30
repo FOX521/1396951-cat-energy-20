@@ -1,28 +1,30 @@
 .promo {
   position: relative;
-  margin-top: -2px;
+  margin-top: -8px;
   margin-bottom: 22px;
   background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 20px 170px, 1px 1px;
+  background-position: 11px 171px, -10px 6px;
   height: 480px;
   border: 1px solid transparent;
 
   @include taplet-up {
-    margin-top: 263px;
-    margin-bottom: 0;
+    margin-top: 250px;
+    margin-bottom: 13px;
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center top;
-    height: 690px;
+    background-position: center 1px;
+    height: 598px;
   }
 
   @include desktop-up {
     margin: 0;
-    margin-bottom: 82px;
+    margin-top: -7px;
+    margin-bottom: -94px;
     background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 540px 143px, right top;
+    background-position: 550px 140px, 713px top;
+    padding-bottom: 94px;
   }
 }
 
@@ -32,11 +34,13 @@
   line-height: 36px;
   color: $color-white;
   text-align: center;
-  width: 249px;
-  margin-top: 26px;
-  margin-left: 36px;
+  width: 254px;
+  margin-top: 33px;
+  margin-left: 24px;
 
   @include taplet-up {
+    margin-top: -198px;
+    margin-left: 109px;
     font-size: 60px;
     line-height: 60px;
     color: $color-black;
@@ -45,8 +49,8 @@
   }
 
   @include desktop-up {
-    margin-top: 223px;
-    margin-left: 190px;
+    margin-top: 222px;
+    margin-left: 181px;
     margin-bottom: 40px;
     font-size: 60px;
     line-height: 60px;
@@ -59,11 +63,14 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  margin-left: 60px;
-  margin-top: 50px;
-  min-width: 198px;
+  margin-left: 51px;
+  margin-top: -6px;
+  width: 198px;
 
   @include taplet-up {
+    width: 283px;
+    margin-left: 109px;
+    margin-top: -9px;
     color: $color-black;
     font-size: 20px;
     line-height: 20px;
@@ -72,7 +79,7 @@
 
   @include desktop-up {
     margin: 0;
-    margin-left: 190px;
+    margin-left: 181px;
     margin-bottom: 52px;
     font-size: 20px;
     line-height: 20px;
@@ -82,27 +89,28 @@
 .promo__button {
   @include font-oswald ();
   display: block;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  margin: 279px auto;
+  width: 280px;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  margin: 0 auto;
+  margin-top: 303px;
   text-align: center;
-  padding-left: 44px;
-  padding-right: 44px;
   background-color: $color-green;
   text-decoration: none;
   color: $color-white;
+  text-transform: uppercase;
 
   @include taplet-up () {
-    max-width: 244px;
-    margin-top: 29px;
-    margin-left: 83px;
-    padding: 12px 26px;
+    width: 244px;
+    margin-top: 49px;
+    margin-left: 103px;
+    padding: 12px 0;
     font-size: 20px;
     text-transform: uppercase;
   }
 
   @include desktop-up {
     margin: 0;
-    margin-left: 190px;
+    margin-left: 181px;
   }
 }

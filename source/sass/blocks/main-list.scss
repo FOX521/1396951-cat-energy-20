@@ -1,4 +1,4 @@
-.main-list {
+.nav__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -13,12 +13,12 @@
   }
 }
 
-.main-list__link {
+.nav__list-link {
   text-decoration: none;
   color: $color-black;
 }
 
-.main-list__item {
+.nav__list-item {
   padding-top: 22px;
   padding-bottom: 24px;
   border-bottom: 1px solid $color-border-light;

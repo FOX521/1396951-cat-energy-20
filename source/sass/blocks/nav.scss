@@ -1,5 +1,6 @@
 .nav {
   @include font-oswald ();
+  position: relative;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -7,8 +8,156 @@
   text-transform: uppercase;
   color: $color-black;
   text-align: center;
+
+  @include taplet-up {
+    margin-top: 11px;
+  }
+
+  @include desktop-up {
+    width: 569px;
+  }
 }
 
 .nav__button {
+  position: absolute;
+  top: -49px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  @include taplet-up {
+    display: none;
+  }
+
+  @include desktop-up {
+    display: none;
+  }
+}
+
+.nav__closed .nav__button::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 14px;
+  width: 24px;
+  height: 2px;
+  background-color: $color-black;
+  box-shadow:
+    0 8px 0 0 $color-black,
+    0 16px 0 0 $color-black;
+}
+
+.nav__opened .nav__button {
+  top: -55px;
+  right: -13px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 26px;
+    right: 13px;
+    width: 24px;
+    height: 2px;
+    background-color: $color-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.nav__closed .nav__list {
   display: none;
+}
+
+.nav__closed .nav__list-item {
+  display: none;
+}
+
+.nav__list {
+  width: 280px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include taplet-up {
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  @include desktop-up () {
+    width: 1380px;
+    column-gap: 33px;
+    padding-top: 38px;
+  }
+}
+
+.nav__list-link {
+  text-decoration: none;
+  color: $color-black;
+}
+
+.nav__list-item {
+  padding-top: 29px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $color-border-light;
+
+  @include taplet-up () {
+    display: block;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    border-bottom: none;
+    padding-top: 22px;
+  }
+
+  @include desktop-up {
+    display: block;
+    font-size: 20px;
+  }
+}
+
+.nav__list-item-first {
+  @include taplet-up {
+  margin-left:10px;
+  }
+}
+
+.nav__list-item-second {
+  padding-top: 22px;
+
+  @include taplet-up {
+    margin-left: 34px;
+    margin-right: 0;
+  }
+
+  @include desktop-up {
+    margin-left: 2px;
+  }
+}
+
+.nav__list-item-third {
+  padding-top: 24px;
+
+  @include taplet-up {
+  padding-top: 22px;
+  margin-right: 0;
+  margin-left: 37px;
+  }
+
+  @include desktop-up {
+    margin-left: 0;
+  }
 }

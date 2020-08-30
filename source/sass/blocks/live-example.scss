@@ -2,9 +2,17 @@
   @include font-oswald ();
   background-color: $color-dirty-grey;
   border: 1px solid transparent;
+  margin-top: 42px;
 
   @include taplet-up () {
-    margin: 0;
+    margin-top: 45px;
+    background: linear-gradient(to top, #f2f2f2 39%, #ffffff 30%);
+  }
+
+  @include desktop-up {
+    position: relative;
+    background: linear-gradient(to top,$color-dirty-grey 75%, $color-white 12%);
+    margin-top: 65px;
   }
 }
 
@@ -14,17 +22,19 @@
   line-height: 40px;
   color: $color-black;
   margin-top: 27px;
-  margin-left: 20px;
+  margin-left: 13px;
 
   @include taplet-up () {
-    margin-top: 43px;
-    margin-left: 30px;
+    margin-top: 44px;
+    margin-left: 22px;
     margin-bottom: 63px;
     font-size: 60px;
     line-height: 60px;
   }
 
   @include desktop-up () {
+    margin-top: 1px;
+    margin-left: 102px;
     margin-bottom: 146px;
   }
 }
@@ -34,9 +44,14 @@
   font-size: 14px;
   line-height: 18px;
   color: $color-grey;
+  margin-left: 10px;
+  margin-top: 33px;
+  width: 279px;
 
   @include taplet-up () {
-    margin: 0 30px;
+    width: 700px;
+    margin-top: 60px;
+    margin-left: 20px;
     margin-bottom: 54px;
     font-size: 16px;
     line-height: 24px;
@@ -44,36 +59,145 @@
 
   @include desktop-up () {
     max-width: 436px;
+    margin-left: 101px;
+  }
+}
+
+.live-example__block {
+
+  @include taplet-up {
+  display: flex;
+  margin-top: -40px;
+  justify-content: space-between;
+  }
+
+  @include desktop-up {
+    flex-wrap: wrap;
+    width: 40%;
   }
 }
 
 .live-example__spend-for-food {
   @include font-oswald ();
+  margin-top: 18px;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
 
+  @include taplet-up {
+    align-self: end;
+    width: 191px;
+    text-align: end;
+    margin-top: 45px;
+    margin-right: 20px;
+    font-size: 20px;
+    line-height: 29px;
+  }
+
   @include desktop-up {
-    margin-top: 55px;
-    padding-left: 40px;
+    width: 400px;
+    margin-top: 61px;
+    padding-left: 102px;
     text-align: start;
     font-size: 20px;
     line-height: 20px;
   }
 }
 
-.live-example__list {
-  display: flex;
-  margin: 0;
-  padding: 0;
+.live-example__span {
+  @include desktop-up {
+    margin-left: 53px;
+  }
 }
+
 
 .live-example__img {
   display: block;
-  margin: auto;
+  margin-top: 36px;
+  margin-left: -5px;
+
+  @include desktop-up {
+    position: absolute;
+    top: 0px;
+    right: 140px;
+  }
 }
 
 .live-example__label {
-  margin-left: 20px;
+  display: none;
+  margin-top: 32px;
+  margin-left: 30px;
+  margin-bottom: 38px;
+
+  @include desktop-up {
+    display: none;
+  }
+}
+
+.live-example__range-controls {
+  width: 84px;
+  height: 14px;
+  margin-left: 111px;
+  margin-top: 41px;
+  margin-bottom: 37px;
+  background-color: $color-white;
+  border-radius: 6px;
+  border: 1px solid transparent;
+
+
+  @include taplet-up {
+  width: 428px;
+  height: 34px;
+  margin: 0 auto;
+  margin-top: 330px;
+  margin-bottom: 56px;
+  padding-top: 15px;
+  background-color: transparent;
+  }
+
+  @include desktop-up {
+    margin-top: -52px;
+    margin-right: 172px;
+    margin-bottom: 55px;
+  }
+}
+
+.live-example__scale {
+  width: 35px;
+  height: 6px;
+  background-color: $color-green;
+  border-radius: 6px;
+  margin-top: 4px;
+  margin-left: 6px;
+
+  @include taplet-up {
+  position: relative;
+  width: 428px;
+  margin-left: 1px;
+  background-color: $color-tabel-row;
+  }
+}
+
+.live-example__toggle {
+  @include taplet-up {
+  position: absolute;
+  top: -12px;
+  left: 46%;
+  width: 34px;
+  height: 34px;
+  background-color: $color-white;
+  border-radius: 50%;
+  cursor: pointer;
+  }
+}
+
+.live-example__toggle-dot {
+  @include taplet-up {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: $color-green;
+  margin: 12px auto;
+  }
 }

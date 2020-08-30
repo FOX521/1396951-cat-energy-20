@@ -1,5 +1,20 @@
 .list-example {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  margin-top: 29px;
   list-style: none;
+
+  @include taplet-up {
+    width: 460px;
+  }
+
+  @include desktop-up {
+    width: 100%;
+    margin-left: 72px;
+    margin-top: 45px;
+  }
 }
 
 .list-example__item {
@@ -8,8 +23,66 @@
   line-height: 24px;
   color: $color-black;
   margin-top: 10px;
+  margin-left: 45px;
+
+  @include taplet-up {
+    width: 162px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 11px;
+    padding-top: 19px;
+    font-size: 29px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+  }
 
   @include desktop-up {
     margin-left: 30px;
+  }
+}
+
+.list-example__item-second {
+  margin-left: 68px;
+
+  @include taplet-up {
+    margin-left: 40px;
+  }
+}
+
+.list-example__span {
+  display: inline-block;
+  width: 59px;
+  font-size: 15px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.list-example__span-weight {
+  margin-top: 8px;
+  margin-left: -14px;
+
+  @include taplet-up {
+    width: 113px;
+    text-align: center;
+    background-color: $color-dirty-grey;
+    margin-top: 18px;
+    margin-left: 22px;
+    font-size: 17px;
+  }
+}
+
+.list-example__span-days {
+  margin-top: 8px;
+  margin-left: 10px;
+
+  @include taplet-up {
+    width: 122px;
+    text-align: center;
+    background-color: #f2f2f2;
+    margin-top: 18px;
+    margin-left: 22px;
+    font-size: 17px;
   }
 }
