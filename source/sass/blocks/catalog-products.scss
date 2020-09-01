@@ -2,6 +2,8 @@
   @include font-oswald ();
   margin-left: 20px;
   padding-bottom: 41px;
+  margin-top: 27px;
+  margin-left: 12px;
   border-bottom: 1px solid $color-border-grey;
   font-size: 36px;
   line-height: 36px;
@@ -71,6 +73,8 @@
 
 .catalog-products__title {
   @include font-oswald ();
+  width: 76px;
+  margin-top: -12px;
   font-size: 16px;
   line-height: 20px;
   color: $color-black;
@@ -127,19 +131,24 @@
   }
 }
 
+.catalog-products__img {
+  margin-top: -33px;
+  margin-left: 20px;
+}
+
 .catalog-products__link {
   @include font-oswald ();
+  width: 280px;
+  height: 20px;
+  padding-top: 20px;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   font-size: 16px;
   line-height: 0px;
   color: $color-white;
   background-color: $color-green;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 109px;
-  padding-left: 109px;
-  margin: auto;
+
 
   @include taplet-up () {
     margin-bottom: 30px;

@@ -40,6 +40,7 @@
   text-decoration: none;
 
   @include taplet-up () {
+    width: 704px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -47,7 +48,7 @@
   }
 
   @include desktop-up {
-    justify-content: none;
+    width: 1300px;
   }
 }
 
@@ -264,6 +265,6 @@
   }
 
   @include desktop-up {
-    left: 1px;
+    left: -2px;
   }
 }
