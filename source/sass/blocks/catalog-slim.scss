@@ -131,22 +131,22 @@
   border-bottom: 1px solid $color-border-light;
 
 
-@include taplet-up () {
-  width: 377px;
-  margin-top: -13px;
-  margin-left: 30px;
-  border: none;
-  font-size: 16px;
-  line-height: 24px;
-}
+  @include taplet-up () {
+    width: 377px;
+    margin-top: -13px;
+    margin-left: 30px;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+  }
 
-@include desktop-up {
-  width: 467px;
-  margin-top: -1px;
-  margin-left: 51px;
-  margin-bottom: 3px;
-  font-size: 16px;
-  line-height: 24px;
+  @include desktop-up {
+    width: 467px;
+    margin-top: -1px;
+    margin-left: 51px;
+    margin-bottom: 3px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 

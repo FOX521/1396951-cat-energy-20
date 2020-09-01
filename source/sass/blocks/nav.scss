@@ -131,7 +131,7 @@
 
 .nav__list-item-first {
   @include taplet-up {
-  margin-left:10px;
+    margin-left: 10px;
   }
 }
 
@@ -152,9 +152,9 @@
   padding-top: 23px;
 
   @include taplet-up {
-  padding-top: 22px;
-  margin-right: 0;
-  margin-left: 37px;
+    padding-top: 22px;
+    margin-right: 0;
+    margin-left: 37px;
   }
 
   @include desktop-up {

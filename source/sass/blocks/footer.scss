@@ -1,7 +1,7 @@
 .footer {
   @include taplet-up {
-  padding-top: 67px;
-  background-color: $color-white;
+    padding-top: 67px;
+    background-color: $color-white;
   }
 
   @include desktop-up {
@@ -191,8 +191,8 @@
 
 .footer__social-list-item-vk {
   @include taplet-up {
-  margin-top: 20px;
-  margin-left: 27px;
+    margin-top: 20px;
+    margin-left: 27px;
   }
 
   @include desktop-up {
@@ -241,16 +241,16 @@
 
   @include taplet-up {
     &::after {
-    width: 23px;
-    height: 23px;
+      width: 23px;
+      height: 23px;
     }
   }
 }
 
 .footer__social-list-item-fb {
   @include taplet-up {
-  margin-top: 16px;
-  margin-left: 6px;
+    margin-top: 16px;
+    margin-left: 6px;
   }
 }
 
@@ -289,8 +289,8 @@
   }
 
   @include desktop-up {
-     margin-top: 16px;
-     margin-right: 129px;
+    margin-top: 16px;
+    margin-right: 129px;
   }
 }
 

@@ -81,30 +81,30 @@
 
 .advantages-food__item-first-describe {
   @include taplet-up {
-  width: 201px;
-  margin-top: 109px;
-  margin-left: -2px;
+    width: 201px;
+    margin-top: 109px;
+    margin-left: -2px;
   }
 }
 
 .advantages-food__item-second-describe {
   @include taplet-up {
-  width: 227px;
-  margin-top: 109px;
+    width: 227px;
+    margin-top: 109px;
   }
 }
 
 .advantages-food__item-third-describe {
   @include taplet-up {
-  width: 209px;
-  margin-top: 111px;
+    width: 209px;
+    margin-top: 111px;
   }
 }
 
 .advantages-food__item-fourth-describe {
   @include taplet-up {
-  width: 249px;
-  margin-top: 111px;
+    width: 249px;
+    margin-top: 111px;
   }
 }
 
@@ -181,14 +181,14 @@
     background-position: center center;
   }
 
-  @include desktop-up{
+  @include desktop-up {
     top: 38px;
   }
 }
 
 .advantages-food__item-thirth {
   @include taplet-up {
-  margin-top: 37px;
+    margin-top: 37px;
   }
 
   @include desktop-up {

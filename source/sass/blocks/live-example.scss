@@ -11,7 +11,7 @@
 
   @include desktop-up {
     position: relative;
-    background: linear-gradient(to top,$color-dirty-grey 75%, $color-white 12%);
+    background: linear-gradient(to top, $color-dirty-grey 75%, $color-white 12%);
     margin-top: 65px;
   }
 }
@@ -64,11 +64,10 @@
 }
 
 .live-example__block {
-
   @include taplet-up {
-  display: flex;
-  margin-top: -40px;
-  justify-content: space-between;
+    display: flex;
+    margin-top: -40px;
+    justify-content: space-between;
   }
 
   @include desktop-up {
@@ -119,7 +118,7 @@
 
   @include desktop-up {
     position: absolute;
-    top: 0px;
+    top: 0;
     right: 140px;
   }
 }
@@ -147,13 +146,13 @@
 
 
   @include taplet-up {
-  width: 428px;
-  height: 34px;
-  margin: 0 auto;
-  margin-top: 330px;
-  margin-bottom: 56px;
-  padding-top: 15px;
-  background-color: transparent;
+    width: 428px;
+    height: 34px;
+    margin: 0 auto;
+    margin-top: 330px;
+    margin-bottom: 56px;
+    padding-top: 15px;
+    background-color: transparent;
   }
 
   @include desktop-up {
@@ -172,32 +171,32 @@
   margin-left: 6px;
 
   @include taplet-up {
-  position: relative;
-  width: 428px;
-  margin-left: 1px;
-  background-color: $color-tabel-row;
+    position: relative;
+    width: 428px;
+    margin-left: 1px;
+    background-color: $color-tabel-row;
   }
 }
 
 .live-example__toggle {
   @include taplet-up {
-  position: absolute;
-  top: -12px;
-  left: 46%;
-  width: 34px;
-  height: 34px;
-  background-color: $color-white;
-  border-radius: 50%;
-  cursor: pointer;
+    position: absolute;
+    top: -12px;
+    left: 46%;
+    width: 34px;
+    height: 34px;
+    background-color: $color-white;
+    border-radius: 50%;
+    cursor: pointer;
   }
 }
 
 .live-example__toggle-dot {
   @include taplet-up {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: $color-green;
-  margin: 12px auto;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $color-green;
+    margin: 12px auto;
   }
 }
