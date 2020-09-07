@@ -1,14 +1,61 @@
+.additional-products {
+  @include taplet-up {
+    padding-bottom: 30px;
+  }
+}
+
+
 .additional-products__title {
   @include font-oswald ();
+  position: relative;
+  margin-left: 11px;
+  margin-top: 16px;
+  margin-bottom: 0;
+  padding-bottom: 34px;
   font-size: 24px;
   line-height: 24px;
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: -8px;
+    display: block;
+    width: 53px;
+    height: 2px;
+    background-color: $color-green;
+  }
+
   @include taplet-up () {
-    margin-bottom: 0;
+    position: relative;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 7px;
+    margin-left: -8px;
     padding-left: 67px;
     padding-bottom: 80px;
-    border-top: 2px solid $color-green;
-    border-bottom: 1px solid $color-tabel-row;
+
+    &::before {
+      display: block;
+      position: absolute;
+      top: 22px;
+      left: -20px;
+      content: "";
+      width: 50px;
+      height: 2px;
+      background-color: $color-green;
+    }
+
+    &::after {
+      display: block;
+      position: absolute;
+      top: 22px;
+      right: -8px;
+      content: "";
+      width: 328px;
+      height: 2px;
+      background-color: $color-green;
+    }
   }
 
   @include desktop-up {
@@ -24,6 +71,10 @@
   margin: 0;
   padding: 0;
 
+  @include taplet-up {
+    margin: 0 22px;
+  }
+
   @include desktop-up {
     display: inline-block;
     width: 896px;
@@ -32,13 +83,19 @@
 }
 
 .additional-products__item {
+  border-bottom: 1px solid black;
+  padding-bottom: 17px;
+
+
   @include taplet-up () {
     display: flex;
     flex-wrap: wrap;
     margin-top: 0;
-    padding: 28px 38px;
+    padding-top: 9px;
+    padding-right: 17px;
+    padding-left: 16px;
+    padding-bottom: 28px;
     border: 1px solid $color-tabel-row;
-    border-top: none;
   }
 
   @include desktop-up {
@@ -50,12 +107,17 @@
 
 .additional-products__title-item {
   @include font-oswald ();
+  margin-top: 13px;
+  margin-left: 13px;
+  margin-bottom: -9px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
 
   @include taplet-up () {
     width: auto;
+    margin-top: 16px;
+    margin-left: 22px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -63,10 +125,12 @@
 
 .additional-products__table {
   margin-top: 20px;
+  margin-left: 8px;
   margin-bottom: 25px;
 
   @include taplet-up () {
     width: 60%;
+    margin-top: 19px;
     margin-left: auto;
   }
 
@@ -89,6 +153,9 @@
   line-height: 14px;
 
   @include taplet-up {
+    padding-right: 4px;
+    padding-bottom: 11px;
+    font-size: 16px;
     text-align: end;
   }
 
@@ -99,29 +166,41 @@
 
 .additional-products__table-column-second {
   @include font-arial ();
+  width: 37px;
   padding: 0;
+  padding-left: 10px;
   font-size: 14px;
   line-height: 14px;
   text-align: end;
+
+  @include taplet-up {
+    padding-right: 19px;
+    padding-left: 30px;
+    padding-bottom: 13px;
+    font-size: 16px;
+    text-align: end;
+  }
 }
 
 .additional-products__button {
   @include font-oswald ();
-  text-align: center;
   display: block;
+  width: 280px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: -14px;
+  margin-left: 12px;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 0px;
   color: $color-white;
   background-color: $color-green;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-top: 10px;
 
   @include taplet-up () {
-    flex-grow: 1;
-    width: 632px;
+    width: 633px;
+    margin-left: 21px;
   }
 
   @include desktop-up {
@@ -134,14 +213,17 @@
 .additional-products__offer {
   background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 78px 80px, 280px 289px;
+  background-size: 60px 60px, 280px 289px;
   height: 289px;
-  background-position: 95px 32px, 0;
+  background-position: 110px 65px, 0;
   border: 1px solid transparent;
-  margin-top: 50px;
+  margin-top: 40px;
+  margin-left: 11px;
 
   @include taplet-up () {
     position: relative;
+    margin-top: 22px;
+    margin-left: 0;
     min-width: 708px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-repeat: no-repeat;
@@ -167,13 +249,13 @@
   color: $color-white;
   width: 160px;
   text-align: center;
-  margin-top: 168px;
+  margin-top: 187px;
   margin-left: 58px;
 
   @include taplet-up () {
     position: absolute;
-    top: 91px;
-    right: 124px;
+    top: 116px;
+    right: 146px;
     margin: 0;
     text-align: start;
   }
