@@ -1,4 +1,14 @@
-.form__title {
+ .form {
+   @include taplet-up {
+     margin-bottom: 55px;
+   }
+
+   @include desktop-up {
+     margin-bottom: 63px;
+   }
+ }
+
+ .form__title {
   @include font-oswald ();
   margin-top: 36px;
   margin-bottom: 20px;
@@ -15,9 +25,9 @@
   }
 
   @include desktop-up {
-    margin-top: 77px;
-    margin-left: 71px;
-    margin-bottom: 56px;
+    margin-top: 188px;
+    margin-left: 80px;
+    margin-bottom: 50px;
   }
 }
 
@@ -45,14 +55,19 @@
     width: 282px;
     font-size: 20px;
     line-height: 40px;
-    margin-top: 54px;
-    margin-left: 70px;
+    margin-top: 10px;
+    margin-left: 41px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    vertical-align: sub;
   }
 
   @include desktop-up {
     padding: 0;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 22px;
+    margin-left: 81px;
     min-width: 568px;
     text-align: center;
   }
@@ -70,7 +85,11 @@
     display: inline;
     font-size: 16px;
     line-height: 16px;
-    margin-left: 100px;
+    margin-left: 57px;
+  }
+
+  @include desktop-up {
+    margin-left: 77px;
   }
 }
 
@@ -95,7 +114,7 @@
   }
 
   @include desktop-up {
-    margin-left: 60px;
+    margin-left: 66px;
     margin-bottom: 66px;
   }
 }
@@ -109,6 +128,7 @@
   }
 
   @include desktop-up {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -132,7 +152,8 @@
 
   @include desktop-up {
     display: inline-block;
-    margin-left: 60px;
+    margin-top: 6px;
+    margin-left: 82px;
   }
 }
 
@@ -146,18 +167,20 @@
   padding-bottom: 22px;
 
   @include taplet-up () {
+    width: 86%;
     margin-top: 71px;
-    margin-left: 70px;
+    margin-left: 42px;
     padding-top: 30px;
     padding-left: 27px;
-    padding-bottom: 25px;
+    padding-bottom: 4px;
     border: 1px solid $color-border-light;
   }
 
   @include desktop-up {
     display: inline-block;
-    min-width: 541px;
+    width: 568px;
     margin-top: 0;
+    margin-left: 80px;
     padding: 0;
     padding-bottom: 30px;
   }
@@ -190,10 +213,20 @@
   padding-left: 16px;
   border: 1px solid $color-border-grey;
   box-sizing: border-box;
+
+  @include taplet-up {
+    height: 52px;
+  }
 }
 
 .form__fieldset-collback-item-for-program {
   margin-top: 18px;
+
+  @include taplet-up {
+    margin-top: -2px;
+    margin-bottom: 23px;
+    margin-left: 25px;
+  }
 }
 
 .form__fieldset-collback-input-for-cat-name {
@@ -203,9 +236,23 @@
   border: 1px solid $color-border-grey;
   box-sizing: border-box;
 
+  &::placeholder {
+    @include font-oswald ();
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
   @include taplet-up () {
-    min-width: 559px;
+    min-width: 565px;
+    margin-top: -4px;
     margin-bottom: 20px;
+  }
+
+  @include desktop-up {
+    min-width: 503px;
+    padding-top: 6px;
+    padding-left: 18px;
   }
 }
 
@@ -218,10 +265,24 @@
   border: 1px solid $color-border-grey;
   box-sizing: border-box;
 
+  &::placeholder {
+    @include font-oswald ();
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
   @include taplet-up () {
-    min-width: 526px;
-    margin-left: 18px;
-    margin-bottom: 20px;
+    min-width: 535px;
+    margin-top: 0;
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
+
+  @include desktop-up {
+    min-width: 475px;
+    padding-top: 6px;
+    padding-left: 18px;
   }
 }
 
@@ -233,9 +294,21 @@
   border: 1px solid $color-border-grey;
   box-sizing: border-box;
 
+  &::placeholder {
+    @include font-oswald ();
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
   @include taplet-up () {
-    width: 484px;
-    margin-left: 18px;
+    width: 496px;
+    margin-left: 13px;
+  }
+
+  @include desktop-up {
+    width: 435px;
+    padding-top: 6px;
   }
 }
 
@@ -243,6 +316,14 @@
   padding: 0;
   margin: 0;
   margin-bottom: 29px;
+
+  @include taplet-up {
+    margin-bottom: 23px;
+  }
+
+  @include desktop-up {
+    margin-top: 2px;
+  }
 }
 
 .form__fieldset-collback-input-for-program {
@@ -262,7 +343,6 @@
     margin-left: 60px;
     font-size: 36px;
     line-height: 36px;
-    border-top: 2px solid $color-green;
   }
 }
 
@@ -280,6 +360,46 @@
     height: 2px;
     background-color: #68b738;
   }
+
+  @include taplet-up {
+    margin-top: 65px;
+    margin-left: 37px;
+
+    &::before {
+      position: absolute;
+      top: 22px;
+      left: -69px;
+      content: "";
+      width: 30px;
+      height: 2px;
+      background-color: #68b738;
+    }
+
+    &::after {
+      position: absolute;
+      top: 22px;
+      right: -32px;
+      content: "";
+      width: 146px;
+      height: 2px;
+      background-color: #68b738;
+    }
+  }
+
+  @include desktop-up {
+    margin-top: 52px;
+    margin-left: 78px;
+
+    &::before {
+      left: -110px;
+      width: 69px;
+    }
+
+    &::after {
+      right: -31px;
+      width: 777px;
+    }
+  }
 }
 
 .form__fieldset-comments-title {
@@ -295,6 +415,41 @@
     width: 158px;
     height: 2px;
     background-color: #68b738;
+  }
+
+  @include taplet-up {
+    margin-top: 62px;
+    margin-left: 37px;
+
+   &::before {
+    position: absolute;
+    top: 23px;
+    left: -69px;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #68b738;
+   }
+
+    &::after {
+      width: 479px;
+      top: 23px;
+      right: -31px;
+    }
+  }
+
+  @include desktop-up {
+    margin-top: 65px;
+    margin-left: 78px;
+
+    &::before {
+      width: 70px;
+      left: -110px;
+    }
+
+    &::after {
+      width: 1107px;
+    }
   }
 }
 
@@ -312,6 +467,40 @@
     height: 2px;
     background-color: #68b738;
   }
+
+  @include taplet-up {
+    margin-left: 41px;
+
+    &::before {
+      position: absolute;
+      top: 21px;
+      left: -72px;
+      content: "";
+      width: 30px;
+      height: 2px;
+      background-color: #68b738;
+    }
+
+    &::after {
+      top: 21px;
+      right: -29px;
+      width: 446px;
+    }
+  }
+
+  @include desktop-up {
+    margin-left: 80px;
+
+    &::before {
+      width: 70px;
+      left: -110px;
+    }
+
+    &::after {
+      top: 22px;
+      width: 1077px;
+    }
+  }
 }
 
 .form__fieldset-contacts-list {
@@ -321,32 +510,48 @@
   margin-left: -3px;
   list-style: none;
 
+  @include taplet-up {
+    padding-top: 25px;
+  }
+
   @include desktop-up {
     display: flex;
-    justify-content: space-between;
+    column-gap: 81px;
   }
-}
-
-.form__fieldset-addivites-input {
-  margin-bottom: 6px;
-  margin-right: 29px;
 }
 
 .form__fieldset-contacts-input-email {
   position: relative;
   width: 216px;
 
+  &::placeholder {
+    @include font-oswald ();
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
   @include taplet-up () {
     width: 555px;
+    margin-left: 18px;
   }
 
   @include desktop-up {
     width: 486px;
+    padding-top: 8px;
+    padding-left: 20px;
   }
 }
 
 .form__fieldset-contacts-input-phone {
   width: 199px;
+
+  &::placeholder {
+    @include font-oswald ();
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
 
   @include taplet-up () {
     width: 535px;
@@ -354,7 +559,8 @@
 
   @include desktop-up {
     width: 472px;
-    margin-right: 69px;
+    padding-top: 8px;
+    padding-left: 20px;
   }
 }
 
@@ -378,6 +584,19 @@
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
   }
+
+  @include taplet-up {
+    &::after {
+      right: 48px;
+    }
+  }
+
+  @include desktop-up {
+    &::after{
+      top: 17px;
+      right: 13px;
+    }
+  }
 }
 
 .form__fieldset-contacts-item-phone {
@@ -390,6 +609,19 @@
     height: 18px;
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
+  }
+
+  @include taplet-up {
+    &::after {
+      top: 15px;
+      right: 52px;
+    }
+  }
+
+  @include desktop-up {
+    &::after {
+      right: 15px;
+    }
   }
 }
 
@@ -407,10 +639,34 @@
   }
 }
 
+.form__fieldset-addivites-label {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -58px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/Rectangle.svg");
+    background-size: 40px;
+    background-repeat: no-repeat;
+  }
+}
+
 .form__fieldset-contacts-label {
   @include taplet-up () {
-    margin-left: 60px;
+    margin-left: 42px;
   }
+
+  @include desktop-up {
+    margin-left: 82px;
+  }
+}
+
+.form__fieldset-contacts-label-phone {
+  margin-left: 46px;
 }
 
 .form__fieldset-comments-textarea {
@@ -419,14 +675,28 @@
   margin-top: 15px;
   text-align: center;
 
+  &::placeholder {
+    @include font-oswald ();
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
   @include taplet-up () {
-    min-width: 620px;
-    min-height: 174;
-    margin-left: 70px;
+    min-width: 89%;
+    min-height: 170px;
+    margin-top: 47px;
+    margin-left: 39px;
+    margin-bottom: 39px;
   }
 
   @include desktop-up {
     width: 1220px;
+    padding-top: 10px;
+    padding-left: 19px;
+    margin-left: 77px;
+    margin-bottom: 31px;
+    text-align: left;
   }
 }
 
@@ -438,10 +708,15 @@
   margin-left: -1px;
 
   @include taplet-up () {
+    margin-top: 42px;
+    margin-left: 53px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 60px;
+    column-gap: 75px;
+  }
+
+  @include desktop-up {
+    padding-left: 86px;
   }
 }
 
@@ -449,6 +724,7 @@
   margin-top: 20px;
 
   @include taplet-up () {
+    margin-bottom: 21px;
     min-width: 250px;
   }
 }

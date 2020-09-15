@@ -10,6 +10,7 @@
 
   @include desktop-up {
     position: absolute;
+    top: 2px;
     width: 1380px;
     z-index: 3;
   }
@@ -29,5 +30,11 @@
     width: 185px;
     margin-top: 16px;
     margin-left: -3px;
+  }
+
+  @include desktop-up {
+    width: 200px;
+    margin-top: 31px;
+    margin-left: 81px;
   }
 }

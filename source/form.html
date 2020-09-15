@@ -11,7 +11,11 @@
         <header class="header container">
             <div class="header__block">
                 <a href="#" class="header__block-logo">
-                <img class="header__block-img" src="img/logo-mobile.svg" width="189" height="50"  alt="Логотип интернет-магазина Cat energy">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                    <img class="header__block-img" src="img/logo-mobile.svg" width="189" height="50"  alt="Логотип интернет-магазина Cat energy">
+                  </picture>
                 </a>
             </div>
             <nav class="nav nav__opened">
@@ -28,7 +32,7 @@
                         </a>
                     </li>
                     <li class="nav__list-item nav__list-item-third">
-                        <a href="/form.html" class="nav__list-link">
+                        <a href="/form.html" class="nav__list-link nav__list-link-current">
                         подбор программы
                         </a>
                     </li>
@@ -48,17 +52,17 @@
                     <ul class="form__fieldset-collback-list-for-cat">
                         <li class="form__fieldset-collback-item-for-cat">
                             <label class="form__fieldset-collback-label-for-cat">
-                            ИМЯ:* <input class="form__fieldset-collback-input-for-cat form__fieldset-collback-input-for-cat-name" type="text" name="name-pet" required placeholder="Матроскин">
+                            ИМЯ:* <input class="form__fieldset-collback-input-for-cat form__fieldset-collback-input-for-cat-name" type="text" name="name-pet" required placeholder="Барсик">
                             </label>
                         </li>
                         <li class="form__fieldset-collback-item-for-cat">
                             <label class="form__fieldset-collback-label-for-cat">
-                            Вес (кг):* <input class="form__fieldset-collback-input-for-cat form__fieldset-collback-input-for-cat-weight" type="text" name="weight-pet" required placeholder="30кг">
+                            Вес (кг):* <input class="form__fieldset-collback-input-for-cat form__fieldset-collback-input-for-cat-weight" type="text" name="weight-pet" required placeholder="7">
                             </label>
                         </li>
                         <li class="form__fieldset-collback-item-for-cat">
                             <label class="form__fieldset-collback-label-for-cat">
-                            Возраст (лет): <input class="form__fieldset-collback-input-for-cat form__fieldset-collback-input-for-cat-age" type="text" name="age-pet" placeholder="70">
+                            Возраст (лет): <input class="form__fieldset-collback-input-for-cat form__fieldset-collback-input-for-cat-age" type="text" name="age-pet" placeholder="7">
                             </label>
                         </li>
                     </ul>
@@ -91,7 +95,7 @@
                             </label>
                         </li>
                         <li class="form__fieldset-contacts-item form__fieldset-contacts-item-phone">
-                            <label class="form__fieldset-contacts-label">
+                            <label class="form__fieldset-contacts-label form__fieldset-contacts-label-phone">
                             Телефон:*<input class="form__fieldset-contacts-input-phone" type="text" name="customer-phone" required placeholder="8 (960) 900-60-90">
                             </label>
                         </li>
@@ -108,22 +112,22 @@
                     <ul class="form__fieldset-addivites-list">
                         <li class="form__fieldset-addivites-item">
                             <label class="form__fieldset-addivites-label">
-                            <input class="form__fieldset-addivites-input" type="checkbox" name="insugar" >Сахарозаменитель
+                            <input class="form__fieldset-addivites-input visually-hidden" type="checkbox" name="insugar" >Сахарозаменитель
                             </label>
                         </li>
                         <li class="form__fieldset-addivites-item">
                             <label class="form__fieldset-addivites-label">
-                            <input class="form__fieldset-addivites-input" type="checkbox" name="drink-water">Питьевая вода
+                            <input class="form__fieldset-addivites-input visually-hidden" type="checkbox" name="drink-water">Питьевая вода
                             </label>
                         </li>
                         <li class="form__fieldset-addivites-item">
                             <label class="form__fieldset-addivites-label">
-                            <input class="form__fieldset-addivites-input" type="checkbox" name="milk">Молоко
+                            <input class="form__fieldset-addivites-input visually-hidden" type="checkbox" name="milk">Молоко
                             </label>
                         </li>
                         <li class="form__fieldset-addivites-item">
                             <label class="form__fieldset-addivites-label">
-                            <input class="form__fieldset-addivites-input" type="checkbox" name="vita">Витамины
+                            <input class="form__fieldset-addivites-input visually-hidden" type="checkbox" name="vita">Витамины
                             </label>
                         </li>
                     </ul>

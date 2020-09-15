@@ -11,14 +11,18 @@
         <header class="header container">
             <div class="header__block">
                 <a href="#" class="header__block-logo">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
                 <img class="header__block-img" src="img/logo-mobile.svg" width="189" height="50"  alt="Логотип интернет-магазина Cat energy">
-                </a>
+                </picture>
+              </a>
             </div>
             <nav class="nav nav__opened">
                 <button class="button nav__button"><span class="visually-hidden">Close</span></button>
                 <ul class="nav__list">
                     <li class="nav__list-item nav__list-item-first">
-                        <a href="index.html" class="nav__list-link">
+                        <a href="index.html" class="nav__list-link nav__list-link-current">
                         главная
                         </a>
                     </li>
@@ -112,7 +116,11 @@
                     Затраты на питание : <span class="live-example__span">15 000 РУБ.</span>
                 </p>
                 </div>
-                <img class="live-example__img" src="./img/before-mobile@1x.png" width="311" height="232" alt="Fat cat">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./img/before-desktop@1x.webp 1x, ./img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="./img/before-tablet@1x.webp 1x, ./img/before-tablet@2x.png 2x">
+                <img class="live-example__img" src="./img/before-mobile@1x.webp" srcset="./img/before-mobile@2x.png 2x" width="311" height="232" alt="Fat cat">
+                </picture>
                 <label class="live-example__label">
                 БЫЛО <input class="live-example__range" type="range"> СТАЛО
                 </label>

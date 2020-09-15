@@ -109,6 +109,11 @@
   color: $color-black;
 }
 
+.nav__list-link-current {
+  border-bottom: 2px solid $color-green;
+  padding-bottom: 6px;
+}
+
 .nav__list-item {
   padding-top: 29px;
   padding-bottom: 23px;

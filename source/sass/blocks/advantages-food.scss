@@ -125,11 +125,15 @@
   float: left;
   background-color: $color-green;
   border-radius: 0%;
-  background-image: url("../img/advantage-leaf@1x.png");
+  background-image: url("../img/advantage-leaf@1x.webp");
   background-repeat: no-repeat;
   background-position: 4px 7px;
   width: 60px;
   height: 60px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/advantage-leaf@2x.png");
+  }
 
   @include taplet-up () {
     position: absolute;
@@ -166,11 +170,15 @@
   float: left;
   background-color: $color-green;
   border-radius: 0%;
-  background-image: url("../img/advantage-powder@1x.png");
+  background-image: url("../img/advantage-powder@1x.webp");
   background-repeat: no-repeat;
   background-position: 4px 7px;
   width: 60px;
   height: 60px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/advantage-powder@2x.png");
+  }
 
   @include taplet-up () {
     position: absolute;
@@ -206,11 +214,15 @@
   float: left;
   background-color: $color-green;
   border-radius: 0%;
-  background-image: url("../img/advantage-dining@1x.png");
+  background-image: url("../img/advantage-dining@1x.webp");
   background-repeat: no-repeat;
   background-position: 4px 7px;
   width: 60px;
   height: 60px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/advantage-dining@2x.png");
+  }
 
   @include taplet-up () {
     top: 40px;
@@ -250,11 +262,15 @@
   float: left;
   background-color: $color-green;
   border-radius: 0%;
-  background-image: url("../img/advantage-clock@1x.png");
+  background-image: url("../img/advantage-clock@1x.webp");
   background-repeat: no-repeat;
   background-position: 4px 7px;
   width: 60px;
   height: 60px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/advantage-clock@2x.png");
+  }
 
   @include taplet-up () {
     top: 40px;
